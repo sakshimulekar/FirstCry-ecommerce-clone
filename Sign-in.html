@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <link rel="stylesheet" type="text/css"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sign-In</title>
+  <link rel="stylesheet" href="/Styles/Sign-in.css">
+</head>
+
+<body>
+  <div id="incontainer" >
+    <form id="form" data-aos="zoom-in"
+    data-aos-duration="1500">
+      <div id="signin">
+        <h2 id="heading">LOGIN</h2>
+        <div class="form-wrapper">
+          <label for="">Email</label>
+          <input type="email" id="email" class="form-control">
+        </div>
+        <div class="form-wrapper">
+          <label for="">Password</label>
+          <input type="password" id="password" class="form-control">
+        </div>
+        <input type="submit" id="btn" value="submit">
+      </div>
+    </form>
+  </div>
+  </div>
+</body>
+<script>
+  AOS.init();
+  let myform2 = document.getElementById("form");
+  let compare_arr = JSON.parse(localStorage.getItem("details"));
+  let arrdata2 = []
+  myform2.addEventListener("submit", (e) => {
+    e.preventDefault();
+    objectform2 = {
+      email: myform2.email.value,
+      password: myform2.password.value
+    }
+    arrdata2.push(objectform2);
+    compare_arr.forEach((element, index) => {
+      if ((element.email == arrdata2[0].email) && (element.password == arrdata2[0].password)) {
+        
+        localStorage.setItem("username",JSON.stringify(element.fname));
+        document.getElementById("heading").style.color = "black"
+        document.getElementById("heading").innerText = "Sign in Successful"
+        window.location.href = "user.html";
+      } else {
+        document.getElementById("heading").style.color = "black"
+        document.getElementById("heading").innerText = "Wrong Credentials"
+        window.location.href = "sign-in.html"
+      }
+    });
+  })
+
+</script>
+
+</html>

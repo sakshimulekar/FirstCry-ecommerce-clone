@@ -1,0 +1,115 @@
+
+
+/* ***************************************login form********************************* */
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+#incontainer{
+    background-image: url("/images/amitabh.jpg");
+    /* background-color: black; */
+    background-repeat: no-repeat;
+    min-height: 100vh;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+}
+form {
+    width: 50%;
+    padding-left: 45px;
+    margin: auto;
+}
+#signin {
+    width: 100%;
+    padding-top: 68px;
+    padding-bottom: 48px;
+    background: linear-gradient(to right, #fdc830, #f37335);
+    background-size: 100px 100px;
+    background-repeat: no-repeat;
+    border-radius: 25px;
+    background-size: cover;
+}
+#signin h2 {
+    text-transform: uppercase;
+    font-size: 22px;
+    
+    text-align: center;
+    margin-bottom: 32px;
+    color: white;
+    letter-spacing: 2px;
+}
+form {
+    width: 50%;
+    padding-left: 45px;
+}
+
+form input{
+    font-size: 20px;
+    color: white;
+}
+#password{
+    color: black;
+}
+.form-wrapper {
+    margin-bottom: 17px;
+}
+
+ label {
+    margin-bottom: 9px;
+    display: block;
+    margin-left: 117px;
+    font-size: 14px;
+    font-weight: 600;
+    color: #182932;
+}
+
+.form-control {
+    border: 1px solid #18071e;
+    margin: auto;
+    display: block;
+    width: 70%;
+    height: 40px;
+    padding: 0 20px;
+    border-radius: 20px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background: none;
+}
+#btn {
+    border: none;
+    width: 152px;
+    height: 40px;
+    margin: auto;
+    margin-top: 29px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+    background: black;
+    font-size: 13px;
+    color: #fff;
+    text-transform: uppercase;
+    border-radius: 20px;
+}
+
+
+#nav_right{
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+#nav_right>i{
+    margin-right: 25px;
+    font-size: 20px;
+}
+#nav_right>h2{
+    padding-right: 180px; 
+    font-family: 'Oxygen', sans-serif;  
+}
+#nav_right>i:hover{
+    color: #cb4961;
+}
