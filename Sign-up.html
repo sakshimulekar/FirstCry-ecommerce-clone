@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign-Up</title>
+    <link rel="stylesheet" href="/Styles/Sign-up.css">
+</head>
+
+<body>
+    <div id="signup" data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="2000">
+        <form id="form" action="">
+            <h2 id="header">Registration Form</h2>
+            <div class="formgroup">
+                <div class="sameline">
+                    <label for="">First Name</label>
+                    <input type="text" id="fname" class="form-control">
+                </div>
+                <div class="sameline">
+                    <label for="">Last Name</label>
+                    <input type="text" id="lname" class="form-control">
+                </div>
+            </div>
+            <div class="form-wrapper">
+                <label for="">Email</label>
+                <input type="email" id="email" class="form-control">
+            </div>
+            <div class="form-wrapper">
+                <label for="">Password</label>
+                <input type="password" id="password" class="form-control">
+            </div>
+            <div class="checkbox">
+                <label>
+                    <input type="checkbox"> I accept the Terms of Use & Privacy Policy.
+                    <span class="checkmark"></span>
+                </label>
+            </div>
+            <!-- <input type="submit" id="btn" value="Submit" /> -->
+            <button type="submit" id="btn">Submit</button>
+        </form>
+    </div>
+</body>
+
+<script>
+
+    // let container = document.getElementById("signup")
+    let myform = document.getElementById("form");
+    let arrData = JSON.parse(localStorage.getItem("details")) || [];
+    let header = document.getElementById("header")
+    myform.addEventListener("submit", (e) => {
+        e.preventDefault();
+        let formObj = {
+            fname: form.fname.value,
+            lname: form.lname.value,
+            email: form.email.value,
+            password: form.password.value,
+        }
+        isPresent = false
+        arrData.forEach((el) => {
+            if (formObj.email === el.email) {
+                isPresent = true;
+            }
+        });
+        console.log(formObj.fname);
+        if (formObj.fname == "" || formObj.lname == "" || formObj.email == "" || formObj.password == "") 
+        {
+            alert("Please Fill all the columns")
+        }
+        else {
+
+            if (isPresent === true) {
+                header.innerText = "Account is already Present"
+                header.style.color = "#660000"
+                window.location.href = "sign-up.html"
+            } else {
+                arrData.push(formObj);
+                localStorage.setItem("details", JSON.stringify(arrData));
+                header.innerText = "You Have Successfully Signed-Up";
+                header.style.color = "#0c0936"
+                // alert("Redirecting To Home Page");
+                setTimeout(() => {
+                    window.location.href = "sign-in.html"
+                }, 1500)
+
+            }
+        }
+    })
+    AOS.init();
+</script>
+
+</html>

@@ -1,0 +1,110 @@
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url("/images/amitabh.jpg");
+    /* background-repeat: no-repeat; */
+    /* min-height: 100vh; */
+    background-size: cover;
+    
+}
+
+/* img {
+    max-width: 100%;
+} */
+
+#signup {
+    width: 35%;
+    margin: auto;
+    padding-top: 20px;
+    padding-bottom: 48px;
+    margin-top: 110px;
+    background: linear-gradient(to right, #fdc830, #f37335);
+    background-size: 100px 100px;
+    background-repeat: no-repeat;
+    border-radius: 25px;
+    background-size: cover;
+    
+}
+
+#signup h2 {
+    text-transform: uppercase;
+    font-size: 22px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-align: center;
+    margin-bottom: 32px;
+    color: #0c0936;
+    letter-spacing: 2px;
+}
+form input{
+    font-size: 20px;
+    color: #1e1010;
+}
+
+form {
+    width: 100%;
+    padding: 0px 15px 0px;
+
+}
+
+.formgroup {
+    display: flex;
+    margin-bottom: 14px;
+}
+
+.formgroup .sameline {
+    width: 50%;
+}
+
+.formgroup .sameline:first-child {
+    margin-right: 20px;
+}
+
+.form-wrapper {
+    margin-bottom: 17px;
+}
+
+ label {
+    margin-bottom: 9px;
+    display: block;
+    margin-left: 15px;
+    font-size: 14px;
+    font-weight: 600;
+    color: #121d24;
+}
+
+.form-control {
+    border: 1px solid #18071e;
+    display: block;
+    width: 100%;
+    height: 40px;
+    padding: 0 20px;
+    border-radius: 20px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background: none;
+}
+
+
+#btn {
+    border: none;
+    width: 152px;
+    height: 40px;
+    margin: auto;
+    margin-top: 29px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+    background: #16382b;
+    font-size: 13px;
+    color: #fff;
+    text-transform: uppercase;
+    border-radius: 20px;
+}
+
+
+

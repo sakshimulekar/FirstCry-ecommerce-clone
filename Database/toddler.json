@@ -1,0 +1,100 @@
+[
+  {
+    "id": 1,
+    "image": "https://cdn.fcglcdn.com/brainbees/images/products/300x364/12612293a.webp",
+    "title": "toddler",
+    "category": "child",
+    "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+    "price": 250
+  },
+
+  {
+    "id": 2,
+    "image": "https://cdn.fcglcdn.com/brainbees/images/products/300x364/11909989a.webp",
+    "title": "toddler",
+    "category": "child",
+    "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+    "price": 631
+  },
+
+  {
+    "id": 3,
+    "image": "https://cdn.fcglcdn.com/brainbees/images/products/300x364/9293740a.webp",
+    "category": "boy",
+    "title": "child",
+    "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+    "price": 694
+  },
+
+  {
+    "id": 4,
+    "image": "https://cdn.fcglcdn.com/brainbees/images/products/219x265/3218784a.webp",
+    "category": "boy",
+    "title": "child",
+    "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+    "price": 631
+  },
+
+  {
+    "id": 5,
+    "image": "https://cdn.fcglcdn.com/brainbees/images/products/219x265/11615387a.webp",
+    "category": "boy",
+    "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+    "title": "child",
+    "price": 672
+  },
+
+  {
+    "id": 6,
+    "image": "https://cdn.fcglcdn.com/brainbees/images/products/219x265/11725480a.webp",
+    "category": "boy",
+    "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+    "title": "child",
+    "price": 321
+  },
+
+  {
+    "id": 7,
+    "image": "https://cdn.fcglcdn.com/brainbees/images/products/219x265/11734360a.webp",
+    "category": "boy",
+    "title": "child",
+    "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+    "price": 299
+  },
+
+  {
+    "id": 8,
+    "image": "https://cdn.fcglcdn.com/brainbees/images/products/438x531/11744443a.webp",
+    "category": "boy",
+    "title": "child",
+    "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+    "price": 220
+  },
+
+  {
+    "id": 9,
+    "image": "https://cdn.fcglcdn.com/brainbees/images/products/219x265/12301457a.webp",
+    "category": "boy",
+    "title": "child",
+    "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+    "price": 846
+  },
+
+  {
+    "id": 10,
+    "image": "https://cdn.fcglcdn.com/brainbees/images/products/219x265/12717234a.webp",
+    "category": "boy",
+    "title": "child",
+    "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+    "price": 923
+  },
+
+  {
+    "id": 11,
+    "image": "https://cdn.fcglcdn.com/brainbees/images/products/219x265/12324913a.webp",
+    "category": "boy",
+    "title": "child",
+    "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+    "price": 522
+  }
+]
