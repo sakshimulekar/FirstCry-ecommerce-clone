@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="payment.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+    <title>payment</title>
+</head>
+<body>
+    <div class="header">
+        <h3>Select Payment method</h3>
+        <div class="pay-opt">
+            <h4>
+                <i class="fa-solid fa-tags"></i>
+                Available offers:
+            </h4>
+            <p><li>Get 5% Instant Discount Upto Rs. 500 on SBI Credit Cards (Minimum Order Value: Rs. 2000) T&C</li></p>
+        </div>
+        <div>
+           <div id="card-pay">
+             <h4 id="card-buttun"><i class="fa-solid fa-credit-card"></i>
+                CREDIT/DEBIT CARD
+                <i class="fa-solid fa-angle-down card"></i>
+               <div id="card2"> <i class="fa-solid fa-angle-up card2"></i></div>
+             </h4>
+                <div class="credit-card isactive" id="credit-card" >
+                    <h3>Enter Your Card Details:</h3>
+                    <input type="text" placeholder="Card number" id="card-num">
+                    <i class="fa-solid fa-credit-card"></i><br>
+                    <input type="text" placeholder="Name on card" id="card-name"><br>
+                    <select name="" id="month">
+                        <option value="">Month</option>
+                        <option value="1">01</option>
+                        <option value="2">02</option>
+                        <option value="3">03</option>
+                        <option value="4">04</option>
+                        <option value="5">05</option>
+                        <option value="6">06</option>
+                        <option value="7">07</option>
+                        <option value="8">08</option>
+                        <option value="9">09</option>
+                        <option value="10">10</option>
+                        <option value="11">11</option>
+                        <option value="12">12</option>
+                    </select>
+                    <select id="">
+                        <option value="">Year</option>
+                        <option value="23">23</option>
+                        <option value="24">24</option>
+                        <option value="25">25</option>
+                        <option value="26">26</option>
+                        <option value="27">27</option>
+                        <option value="28">28</option>
+                        <option value="29">29</option>
+                        <option value="30">30</option>
+                        <option value="31">31</option>
+                        <option value="32">32</option>
+                        <option value="33">33</option>
+                        <option value="34">34</option>
+                        <option value="35">35</option>
+                        <option value="36">36</option>
+                        <option value="37">37</option>
+                        <option value="38">38</option>
+                        <option value="39">39</option>
+                        <option value="40">40</option>
+                        <option value="41">41</option>
+                        <option value="42">42</option>
+                    </select>
+                    <input type="text" placeholder="CVV"><br>
+                    <input type="checkbox">Secure your card as per RBI guidelines
+                    <i class="fa-solid fa-circle-info"></i><br>
+                    <button id="card-btn">Pay now</button>
+                </div>
+            </div>
+           <div id="upi-pay">
+                <img src="https://play-lh.googleusercontent.com/B5cNBA15IxjCT-8UTXEWgiPcGkJ1C07iHKwm2Hbs8xR3PnJvZ0swTag3abdC_Fj5OfnP" alt="">
+                UPI
+                <i class="fa-solid fa-angle-down UPI"></i>
+                <div id="upi">
+                    <p>Please provide valid UPI handle i.e (Virtual Payment Address)</p>
+                    <input type="text" placeholder="Ex-mobileno@ybl or userid@okhdfcbank" id="upi-input"><br>
+                    <button id="upi-btn">pay now upi</button>
+                </div>  
+            </div>
+            <div id="paytm-pay">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/4/42/Paytm_logo.png" alt="">
+                PAYTM WALLET
+                <i class="fa-solid fa-angle-down ptm"></i>
+                <div id="paytm">
+                    <p>Link your Paytm Wallet and experience "One Step Payment" for all your future transactions on Firstcry</p>
+                <h4>Link your wallet using mobile no:</h4>
+                <input type="text" placeholder="Enter mobile number" id="ptm-input"><br>
+                <button id="link-btn">LINK WALLET AND PAY</button>
+                OR
+                <p>if you do no wish to link your wallet to Firstcry click on pay now and continue to Paytm site to make Payment.</p>
+                <button id="ptm-btn">PAY NOW</button>
+                </div>
+            </div>
+            <div id="net-pay">
+                <i class="fa-solid fa-building-columns"></i> NET BANKING
+                <i class="fa-solid fa-angle-down net"></i>
+                <div id="net-info">
+                    <select id="net-input">
+                        <option value="">Select Your Bank</option>
+                        <option value="Axis Bank">Axis Bank</option>
+                        <option value="SBI Bank">SBI Bank</option>
+                        <option value="HDFC Bank">HDFC Bank</option>
+                        <option value="Kotak Bank">Kotak Bank</option>
+                        <option value="ICIC Bank">ICIC Bank</option>
+                        <option value="Citi Bank">Citi Bank</option>
+                        <option value="Canera Bank">Canera Bank</option>
+                        <option value="Andhra Bank">Andhra Bank</option>
+                        <option value="PNB Bank">PNB Bank</option>
+                    </select><br>
+                    <button id="net-btn">PAY NOW</button>
+                </div>
+            </div>
+            <div id="cod-pay">
+                <img class="image" src="https://png.pngtree.com/png-vector/20210502/ourlarge/pngtree-cash-on-delivery-png-png-image_3257801.jpg" alt="">
+                CASH ON DELIVERY
+                <i class="fa-solid fa-angle-down cod"></i>
+                <div id="cod-info">
+                    <ul>
+                        <li>Cashless Delivery</li>
+                        <li>TRUSTED & SECURE Payment gateways</li>
+                        <li>Easy & hassle-free returns & refunds</li>
+                    </ul>
+                    <button id="cod-btn">PAY NOW</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="./payment.js" ></script>
+</html>

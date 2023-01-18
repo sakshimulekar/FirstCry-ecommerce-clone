@@ -1,0 +1,250 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family:"Roboto-Bold";
+}
+
+/* body{
+    background-color: rgb(240, 240, 240);
+} */
+.header{
+    width: 500px;
+    height: 80vh;
+    border: solid 1px black;
+    margin: auto;
+    margin-top: 30px;
+    padding: 0px 5px 5px 5px;
+}
+
+.header p,
+li{
+    font-size: 14px;
+}
+
+h3{
+    background-color: rgb(120, 30, 165);
+    color: white;
+    text-align: center;
+    font-size:18px;
+}
+
+.pay-opt{
+    margin-top: 10px
+}
+
+.pay-opt h4{
+    font-weight: 300;
+}
+
+img{
+    width: 25px;
+} 
+
+#card-pay{
+    display: block;
+}
+
+.credit-card{
+    display: none;
+}
+#card-pay h4:hover{
+    cursor: pointer;
+}
+
+.card{
+    margin-left: 200px;
+    font-size: 20px;
+}
+
+.card2 {
+    margin-left: 393px;
+    font-size: 20px;
+}
+#card-num{
+    width: 200px;
+    padding: 2px 4px;
+    border-right-style: none;
+    border-left-style: none;
+    border-top-style: none;
+}
+
+#card-name{
+    width: 300px;
+    padding: 2px 4px;
+    margin: 5px 0px;
+    border-right-style: none;
+    border-left-style: none;
+    border-top-style: none;
+}
+
+#card-btn{
+    display: block;
+    width: 65%;
+    height: 35px;
+    background-color: rgb(3, 62, 97);
+    color: white;
+    border: none;
+    margin: auto;
+    font-size: 17px;
+}
+
+
+
+/* #card-pay:hover .credit-card{
+    display: block;
+} */
+/* UPI CSS*/
+
+#upi{
+    display: none;
+}
+
+.UPI{
+    font-size: 20px;
+    margin-left: 335px;
+}
+
+#upi-pay p{
+ margin: 5px 0px;
+}
+
+#upi-input {
+    padding: 4px 3px;
+    width: 250px;
+    height: 20px;
+    margin: 5px 0px 10px 0px;
+    font-size: 15px;
+    font-weight: bold;
+    border-right-style: none;
+    border-left-style: none;
+    border-top-style: none;
+}
+
+#upi-btn {
+    display: block;
+    width: 70%;
+    height: 35px;
+    margin: auto;
+    font-size: 19px;
+    background-color: rgb(3, 62, 97);
+    color: #fff;
+    border: none;
+}
+
+/* PAYTM CSS */
+
+#paytm-pay p{
+    margin: 7px 0px;
+}
+
+#paytm {
+    display: none;
+}
+
+.ptm{
+    font-size: 20px;
+    margin-left: 241px;
+}
+
+#ptm-input{
+    font-size: 16px;
+    font-weight: bold;
+    padding: 2px 2px;
+    margin: 5px 0px 10px 0px;
+    border-right-style: none;
+    border-left-style: none;
+    border-top-style: none;
+}
+
+#link-btn {
+    display: block;
+    width: 70%;
+    height: 35px;
+    margin: auto;
+    font-size: 15px;
+    background-color: rgb(3, 62, 97);
+    color: #fff;
+    border: none;
+}
+
+#ptm-btn {
+    display: block;
+    width: 70%;
+    height: 35px;
+    margin: auto;
+    font-size: 15px;
+    background-color: rgb(3, 62, 97);
+    color: #fff;
+    border: none;
+}
+
+/* NET BANKING CSS */
+
+
+#net-info {
+    display: none;
+}
+
+.net{
+    font-size: 20px;
+    margin-left: 263px;
+}
+
+#net-info p {
+    font-size: 16px;
+}
+
+#net-input {
+    padding: 3px 100px 3px 4px;
+    font-size: 16px;
+    margin: 8px 4px 16px 0px;
+}
+
+#net-btn {
+    display: block;
+    width: 70%;
+    height: 35px;
+    margin: auto;
+    font-size: 15px;
+    background-color: rgb(3, 62, 97);
+    color: #fff;
+    border: none;
+    font-size: 16px;
+}
+
+/* COD PAYMENT CSS */
+
+#cod-info {
+    display: none;
+}
+
+.image {
+    width: 30px;
+    height: 23px;
+    object-fit: fill;
+}
+
+.cod {
+    font-size: 20px;
+    margin-left: 206px;
+   
+}
+
+#cod-info li {
+    font-size: 15px;
+    margin-left: 25px;
+    margin-top: 3px;
+}
+
+#cod-btn {
+    display: block;
+    width: 70%;
+    height: 35px;
+    margin: auto;
+    margin-top: 14px;
+    font-size: 15px;
+    background-color: rgb(3, 62, 97);
+    color: #fff;
+    border: none;
+    font-size: 16px;
+}
