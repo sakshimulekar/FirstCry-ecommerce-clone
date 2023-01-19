@@ -70,8 +70,9 @@ function paymentData(){
    if(checkdata.checked){
       console.log(payobj);
    }else {
-      alert('check your input')
+      alert('check your check input')
    }
    
 }
+
 
