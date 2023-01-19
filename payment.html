@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="payment.css">
+    <link rel="stylesheet" href="Styles/payment.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
     <title>payment</title>
 </head>
@@ -16,17 +16,20 @@
                 <i class="fa-solid fa-tags"></i>
                 Available offers:
             </h4>
-            <p><li>Get 5% Instant Discount Upto Rs. 500 on SBI Credit Cards (Minimum Order Value: Rs. 2000) T&C</li></p>
+            <p><li>Get 5% Instant Discount Upto Rs. 500 on SBI Credit Cards (Minimum Order Value: Rs. 2000) <span>T&C</span></li></p>
         </div>
         <div>
            <div id="card-pay">
-             <h4 id="card-buttun"><i class="fa-solid fa-credit-card"></i>
+             <h4 id="card-buttun">
+                <i class="fa-solid fa-credit-card" ></i>
                 CREDIT/DEBIT CARD
                 <i class="fa-solid fa-angle-down card"></i>
-               <div id="card2"> <i class="fa-solid fa-angle-up card2"></i></div>
-             </h4>
+                <div id="card2">
+                    <i class="fa-solid fa-angle-up card2"></i>
+                </div>
+                </h4>
                 <div class="credit-card isactive" id="credit-card" >
-                    <h3>Enter Your Card Details:</h3>
+                    <h3>Enter Your Card Details</h3>
                     <input type="text" placeholder="Card number" id="card-num">
                     <i class="fa-solid fa-credit-card"></i><br>
                     <input type="text" placeholder="Name on card" id="card-name"><br>
@@ -45,7 +48,7 @@
                         <option value="11">11</option>
                         <option value="12">12</option>
                     </select>
-                    <select id="">
+                    <select id="year">
                         <option value="">Year</option>
                         <option value="23">23</option>
                         <option value="24">24</option>
@@ -68,16 +71,18 @@
                         <option value="41">41</option>
                         <option value="42">42</option>
                     </select>
-                    <input type="text" placeholder="CVV"><br>
-                    <input type="checkbox">Secure your card as per RBI guidelines
+                    <input type="text" placeholder="CVV" id="cvv"><br>
+                    <input type="checkbox" id="checkbox">Secure your card as per RBI guidelines
                     <i class="fa-solid fa-circle-info"></i><br>
                     <button id="card-btn">Pay now</button>
                 </div>
             </div>
            <div id="upi-pay">
-                <img src="https://play-lh.googleusercontent.com/B5cNBA15IxjCT-8UTXEWgiPcGkJ1C07iHKwm2Hbs8xR3PnJvZ0swTag3abdC_Fj5OfnP" alt="">
-                UPI
-                <i class="fa-solid fa-angle-down UPI"></i>
+                <h4 id="upi-head">
+                    <img src="https://play-lh.googleusercontent.com/B5cNBA15IxjCT-8UTXEWgiPcGkJ1C07iHKwm2Hbs8xR3PnJvZ0swTag3abdC_Fj5OfnP" alt="">
+                        UPI
+                    <i class="fa-solid fa-angle-down UPI"></i>
+                </h4>
                 <div id="upi">
                     <p>Please provide valid UPI handle i.e (Virtual Payment Address)</p>
                     <input type="text" placeholder="Ex-mobileno@ybl or userid@okhdfcbank" id="upi-input"><br>
@@ -85,9 +90,11 @@
                 </div>  
             </div>
             <div id="paytm-pay">
-                <img src="https://upload.wikimedia.org/wikipedia/commons/4/42/Paytm_logo.png" alt="">
-                PAYTM WALLET
-                <i class="fa-solid fa-angle-down ptm"></i>
+                <h4 id="paytm-data">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/4/42/Paytm_logo.png" alt="">
+                    PAYTM WALLET
+                    <i class="fa-solid fa-angle-down ptm"></i>
+                </h4>
                 <div id="paytm">
                     <p>Link your Paytm Wallet and experience "One Step Payment" for all your future transactions on Firstcry</p>
                 <h4>Link your wallet using mobile no:</h4>
@@ -99,8 +106,10 @@
                 </div>
             </div>
             <div id="net-pay">
-                <i class="fa-solid fa-building-columns"></i> NET BANKING
-                <i class="fa-solid fa-angle-down net"></i>
+                <h4 id="net-data">
+                    <i class="fa-solid fa-building-columns"></i> NET BANKING
+                    <i class="fa-solid fa-angle-down net"></i>
+                </h4>
                 <div id="net-info">
                     <select id="net-input">
                         <option value="">Select Your Bank</option>
@@ -118,9 +127,11 @@
                 </div>
             </div>
             <div id="cod-pay">
-                <img class="image" src="https://png.pngtree.com/png-vector/20210502/ourlarge/pngtree-cash-on-delivery-png-png-image_3257801.jpg" alt="">
-                CASH ON DELIVERY
-                <i class="fa-solid fa-angle-down cod"></i>
+                <h4 id="cod-data">
+                    <img class="image" src="https://png.pngtree.com/png-vector/20210502/ourlarge/pngtree-cash-on-delivery-png-png-image_3257801.jpg" alt="">
+                    CASH ON DELIVERY
+                    <i class="fa-solid fa-angle-down cod"></i>
+                </h4>
                 <div id="cod-info">
                     <ul>
                         <li>Cashless Delivery</li>
@@ -133,5 +144,5 @@
         </div>
     </div>
 </body>
-<script src="./payment.js" ></script>
+<script src="./scripts/payment.js" ></script>
 </html>
