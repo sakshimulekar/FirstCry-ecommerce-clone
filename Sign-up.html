@@ -75,7 +75,7 @@
             if (isPresent === true) {
                 header.innerText = "Account is already Present"
                 header.style.color = "#660000"
-                window.location.href = "sign-up.html"
+                window.location.href = "Sign-up.html"
             } else {
                 arrData.push(formObj);
                 localStorage.setItem("details", JSON.stringify(arrData));
@@ -84,7 +84,7 @@
                 // alert("Redirecting To Home Page");
                 setTimeout(() => {
                     window.location.href = "sign-in.html"
-                }, 1500)
+                }, 2000)
 
             }
         }
