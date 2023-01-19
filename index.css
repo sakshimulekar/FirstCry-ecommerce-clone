@@ -25,13 +25,14 @@
     margin-right: 0px;
 }
 #logo input{
-    width: 100%;
+    display: flex;
+    flex: 1;
+    max-width: 900px;
     height: 25px;
     border-radius: 5px;
     border-width: 1px;
-    padding-right: 120px; 
     border-color: #CFD8DC;
-}
+} 
 #navbar{
     display: flex;
     align-items: center;
@@ -108,11 +109,13 @@
 .slideshow-container img{
     margin-top: 15px;
     vertical-align: middle;
+
 }
 .slideshow-container{
      width: 90%;
      position: relative;
      margin: auto;
+     
 }
 .slideshow-container img{
     height: 100%;
@@ -127,7 +130,7 @@
     margin-top: -22px;
     color: white;
     font-weight: bold;
-    font-size: 18px;
+    font-size: 25px;
     transition: 0.6s ease;
     border-radius: 0 3px 3px 0;
     user-select: none;
@@ -139,24 +142,11 @@
 .prev:hover, .next:hover{
     background-color: rgba(0, 0, 0, 0.8);
 }
-.dot{
-    cursor: pointer;
-    height: 15px;
-    width: 15px;
-    margin: 0 2px;
-    background-color: #bbb;
-    border-radius: 50%;
-    display: inline-block;
-    transition: backgound-color 0.6s ease;
-}
-.active, .dot:hover{
-    background-color: #717171;
-}
 .fade{
     -webkit-animation-name: fade;
-    -webkit-animation-duration: 2s;
+    -webkit-animation-duration: 3s;
     animation-name: fade;
-    animation-duration: 2s;
+    animation-duration: 3s;
 }
 
 @-webkit-keyframes fade{
@@ -172,14 +162,64 @@
     .prev, .next{
         font-size: 11px
     }
-    .dot{
-        height: 10px;
-        width: 10px;
-    }
 }
 @media only screen and (max-width:500px) {
     .prev, .next{
         font-size: 14px
     }
+}
+.openMenu{
+  font-size: 2rem;  
+  margin: 20px;
+  display: none;
+  cursor: pointer;
+  
+}
+#navbar .closeMenu {
+    font-size: 2rem;
+    display: none;
+    cursor: pointer;
+}
+@media(max-width: 950px){
+     #navbar {
+         background: linear-gradient(to right, #f7ff00, #db36a4);
+        color: white;
+        height: 100vh;
+        position: fixed;
+        top: 0;
+        right: 0;
+        left: 0;
+        z-index: 10;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+       
+        transition: top 1s ease;
+        display: none;
+    }
+    #navbar .closeMenu{
+        display: block;
+        position: absolute;
+        top: 20px;
+        right: 20px;
+    }
+    .openMenu{
+        width: 100%;
+        display: flex;
+        margin: auto;
+        margin-right: 10px;
+    }
+    .menunav{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        margin-right: 50px;
+        font-size: 20px;
+        
+    }
+    #navbar li a:hover{
+        background: none;
+        font-size: 1.6rem;
+    }
+
 }
 
