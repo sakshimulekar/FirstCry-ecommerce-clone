@@ -2,7 +2,7 @@ let mydata = [
   {
     "id": 1,
     "image": "https://cdn.fcglcdn.com/brainbees/images/products/300x364/12704810a.webp",
-    "title": "boy T-shirt",
+    "title": "shirt",
     "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
     "price": 250
   },
@@ -10,7 +10,7 @@ let mydata = [
   {
     "id": 2,
     "image": "https://cdn.fcglcdn.com/brainbees/images/products/300x364/12652276a.webp",
-    "title": "boy T-shirt",
+    "title": "shirt",
     "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
     "price": 350
   },
@@ -18,7 +18,7 @@ let mydata = [
   {
     "id": 3,
     "image": "https://cdn.fcglcdn.com/brainbees/images/products/300x364/11425519a.webp",
-    "title": "boy T-shirt",
+    "title": "shirt",
     "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
     "price": 450
   },
@@ -26,7 +26,7 @@ let mydata = [
   {
     "id": 4,
     "image": "https://cdn.fcglcdn.com/brainbees/images/products/300x364/12141710a.webp",
-    "title": "boy T-shirt",
+    "title": "shirt",
     "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
     "price": 250
   },
@@ -34,7 +34,7 @@ let mydata = [
   {
     "id": 5,
     "image": "https://cdn.fcglcdn.com/brainbees/images/products/300x364/12223087a.webp",
-    "title": "boy T-shirt",
+    "title": "shirt",
     "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
     "price": 250
   },
@@ -42,7 +42,7 @@ let mydata = [
   {
     "id": 6,
     "image": "https://cdn.fcglcdn.com/brainbees/images/products/300x364/12627589a.webp",
-    "title": "boy T-shirt",
+    "title": "shirt",
     "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
     "price": 350
   },
@@ -50,7 +50,7 @@ let mydata = [
   {
     "id": 7,
     "image": "https://cdn.fcglcdn.com/brainbees/images/products/300x364/12627464a.webp",
-    "title": "boy T-shirt",
+    "title": "shirt",
     "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
     "price": 350
   },
@@ -58,7 +58,7 @@ let mydata = [
   {
     "id": 8,
     "image": "https://cdn.fcglcdn.com/brainbees/images/products/300x364/11683453a.webp",
-    "title": "boy T-shirt",
+    "title": "shirt",
     "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
     "price": 250
   },
@@ -66,7 +66,7 @@ let mydata = [
   {
     "id": 9,
     "image": "https://cdn.fcglcdn.com/brainbees/images/products/300x364/11568732b.jpg",
-    "title": "boy T-shirt",
+    "title": "shirt",
     "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
     "price": 450
   },
@@ -74,7 +74,7 @@ let mydata = [
   {
     "id": 10,
     "image": "https://cdn.fcglcdn.com/brainbees/images/products/300x364/12442602b.jpg",
-    "title": "boy T-shirt",
+    "title": "shirt",
     "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
     "price": 450
   },
@@ -82,7 +82,7 @@ let mydata = [
   {
     "id": 11,
     "image": "https://cdn.fcglcdn.com/brainbees/images/products/300x364/11568732b.jpg",
-    "title": "ethnic wear",
+    "title": "dress",
     "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
     "price": 1472
   },
@@ -90,7 +90,7 @@ let mydata = [
   {
     "id": 12,
     "image": "https://cdn.fcglcdn.com/brainbees/images/products/300x364/12248274a.webp",
-    "title": "ethnic wear",
+    "title": "dress",
     "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
     "price": 1690
   },
@@ -98,7 +98,7 @@ let mydata = [
   {
     "id": 13,
     "image": "https://cdn.fcglcdn.com/brainbees/images/products/300x364/12602537a.webp",
-    "title": "ethnic wear",
+    "title": "dress",
     "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
     "price": 1800
   },
@@ -106,7 +106,7 @@ let mydata = [
   {
     "id": 14,
     "image": "https://cdn.fcglcdn.com/brainbees/images/products/300x364/11712081a.webp",
-    "title": "ethnic wear",
+    "title": "dress",
     "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
     "price": 2279
   },
@@ -114,7 +114,7 @@ let mydata = [
   {
     "id": 15,
     "image": "https://cdn.fcglcdn.com/brainbees/images/products/300x364/12490417a.webp",
-    "title": "ethnic wear",
+    "title": "dress",
     "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
     "price": 1300
   },
@@ -122,7 +122,7 @@ let mydata = [
   {
     "id": 16,
     "image": "https://cdn.fcglcdn.com/brainbees/images/products/300x364/11515574a.webp",
-    "title": "ethnic wear",
+    "title": "dress",
     "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
     "price": 1500
   },
@@ -130,7 +130,7 @@ let mydata = [
   {
     "id": 17,
     "image": "https://cdn.fcglcdn.com/brainbees/images/products/300x364/12688812a.webp",
-    "title": "ethnic wear",
+    "title": "dress",
     "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
     "price": 2500
   },
@@ -138,7 +138,7 @@ let mydata = [
   {
     "id": 18,
     "image": "https://cdn.fcglcdn.com/brainbees/images/products/300x364/11228570b.jpg",
-    "title": "ethnic wear",
+    "title": "dress",
     "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
     "price": 1970
   },
@@ -146,7 +146,7 @@ let mydata = [
   {
     "id": 19,
     "image": "https://cdn.fcglcdn.com/brainbees/images/products/300x364/12688777a.webp",
-    "title": "ethnic wear",
+    "title": "dress",
     "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
     "price": 1799
   },
@@ -154,7 +154,7 @@ let mydata = [
   {
     "id": 20,
     "image": "https://cdn.fcglcdn.com/brainbees/images/products/300x364/11214403a.webp",
-    "title": "ethnic wear",
+    "title": "dress",
     "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
     "price": 1999
   },
@@ -162,7 +162,7 @@ let mydata = [
   {
     "id": 21,
     "image": "https://cdn.fcglcdn.com/brainbees/images/products/300x364/12143032a.webp",
-    "title": "jeans & trousers",
+    "title": "jeans",
     "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
     "price": 512
   },
@@ -170,7 +170,7 @@ let mydata = [
   {
     "id": 22,
     "image": "https://cdn.fcglcdn.com/brainbees/images/products/300x364/11425440a.webp",
-    "title": "jeans & trousers",
+    "title": "jeans",
     "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
     "price": 710
   },
@@ -178,7 +178,7 @@ let mydata = [
   {
     "id": 23,
     "image": "https://cdn.fcglcdn.com/brainbees/images/products/300x364/10851397a.webp",
-    "title": "jeans & trousers",
+    "title": "jeans",
     "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
     "price": 710
   },
@@ -186,7 +186,7 @@ let mydata = [
   {
     "id": 24,
     "image": "https://cdn.fcglcdn.com/brainbees/images/products/300x364/11748779a.webp",
-    "title": "jeans & trousers",
+    "title": "jeans",
     "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
     "price": 591
   },
@@ -194,7 +194,7 @@ let mydata = [
   {
     "id": 25,
     "image": "https://cdn.fcglcdn.com/brainbees/images/products/300x364/12254761a.webp",
-    "title": "jeans & trousers",
+    "title": "jeans",
     "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
     "price": 680
   },
@@ -202,7 +202,7 @@ let mydata = [
   {
     "id": 26,
     "image": "https://cdn.fcglcdn.com/brainbees/images/products/300x364/11823502a.webp",
-    "title": "jeans & trousers",
+    "title": "jeans",
     "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
     "price": 670
   },
@@ -210,7 +210,7 @@ let mydata = [
   {
     "id": 27,
     "image": "https://cdn.fcglcdn.com/brainbees/images/products/300x364/12254922a.webp",
-    "title": "jeans & trousers",
+    "title": "jeans",
     "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
     "price": 715
   },
@@ -218,7 +218,7 @@ let mydata = [
   {
     "id": 28,
     "image": "https://cdn.fcglcdn.com/brainbees/images/products/300x364/11422158a.webp",
-    "title": "jeans & trousers",
+    "title": "jeans",
     "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
     "price": 880
   },
@@ -226,7 +226,7 @@ let mydata = [
   {
     "id": 29,
     "image": "https://cdn.fcglcdn.com/brainbees/images/products/300x364/10734523a.webp",
-    "title": "jeans & trousers",
+    "title": "jeans",
     "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
     "price": 834
   },
@@ -234,14 +234,14 @@ let mydata = [
   {
     "id": 30,
     "image": "https://cdn.fcglcdn.com/brainbees/images/products/300x364/12738988a.webp",
-    "title": "jeans & trousers",
+    "title": "jeans",
     "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
     "price": 999
   }
 ]
 
 let defaultArr = [...mydata]
-// fetch("../Database/boydata.json")
+// fetch("../Database/a.json")
 // .then((res)=>{
 //     return res.json();
 // })
@@ -269,7 +269,7 @@ let appendData = (mydata) => {
     let des = document.createElement("p");
     des.textContent = el.description;
 
-    let price = document.createElement("p");
+    let price = document.createElement("h5");
     price.textContent = "₹ " + el.price + ".00";
 
     let btn = document.createElement("button");
@@ -338,4 +338,17 @@ sorted.addEventListener("change", function (event) {
     appendData(defaultArr);
     console.log(defaultArr)
   }
+})
+
+filter.addEventListener("change", () => {
+  let filtered = mydata.filter((element) => {
+    if (element.title === filter.value) {
+      return true;
+    } else {
+      return false;
+    }
+  })
+
+  
+  appendData(filtered)
 })
