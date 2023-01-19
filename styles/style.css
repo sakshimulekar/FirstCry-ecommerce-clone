@@ -4,13 +4,14 @@ h1 {
 }
 #product-container {
   display: grid;
-  border: 1px solid gray;
+  border: 1px solid lightgray;
   padding: 25px;
   grid-template-columns: repeat(3, 1fr);
   width: 80%;
   margin: auto;
   gap: 50px;
   text-align: center;
+  border-radius: 8px;
 }
 .carousel-inner {
   margin: auto;
@@ -24,7 +25,8 @@ h1 {
 #card {
   /* border: 2px solid green; */
   padding: 10px;
-  /* border-radius: 8px; */
+  border: 1px solid lightgrey;
+  border-radius: 8px;
 }
 #card:hover {
   border: none;
@@ -36,8 +38,8 @@ img {
 }
 #btn {
   align-items: center;
-  background-color: #06f;
-  border: 2px solid #06f;
+  background-color: lightseagreen;
+  border: 2px solid lightseagreen;
   box-sizing: border-box;
   color: #fff;
   cursor: pointer;
@@ -59,6 +61,7 @@ img {
   user-select: none;
   -webkit-user-select: none;
   touch-action: manipulation;
+  border-radius: 5px;
 }
 
 #btn:focus {
@@ -66,25 +69,20 @@ img {
 }
 
 #btn:hover {
-  background-color: #3385ff;
-  border-color: #3385ff;
-  fill: #06f;
+  background-color: teal;
+  border-color: teal;
+  fill: teal;
 }
 
 #btn:active {
-  background-color: #3385ff;
-  border-color: #3385ff;
-  fill: #06f;
+  background-color: teal;
+  border-color: teal;
+  fill: teal;
 }
 
-@media (min-width: 768px) {
-  #btn {
-    min-width: 170px;
-  }
-}
 input {
   text-align: center;
-  padding: 0px 50px;
+  padding: 0px 20px;
 }
 
 #funcationality {
@@ -106,6 +104,14 @@ input {
 
   /* border: none; */
 }
+
+#filter {
+  padding: 10px 20px;
+  border: none;
+  color: gray;
+  font-weight: bold;
+  align-items: center;
+}
 label {
   font-weight: bold;
   font-size: 20px;
@@ -125,14 +131,92 @@ a {
   color: black;
   font-size: 20px;
 }
-#wedding{
+#wedding {
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  /* border: 2px solid blue; */
+}
+#wedding > img {
+  width: 80%;
+  margin: auto;
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+ 
+  #product-container {
+    display: grid;
+    border: 1px solid #ffd91c;
+    padding: 25px;
+    grid-template-columns: repeat(1, 1fr);
+    width: 70%;
+    margin: auto;
+    gap: 50px;
+    text-align: center;
+  }
+  #funcationality {
+    /* border: 1px solid gray; */
     display: flex;
     flex-direction: column;
+    padding: 20px;
+    justify-content: space-around;
+    text-align: center;
     margin: auto;
-    /* border: 2px solid blue; */
-    
+  }
+  input {
+    text-align: center;
+    padding: 5px;
+    border: 1px solid #ffd91c;
+  }
 }
-#wedding>img{
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+  
+  #product-container {
+    display: grid;
+    border: 1px solid #ffd91c;
+    padding: 25px;
+    grid-template-columns: repeat(2, 1fr);
     width: 80%;
     margin: auto;
+    gap: 50px;
+    text-align: center;
+  }
+  input {
+    text-align: center;
+    padding: 5px;
+    border: 1px solid #ffd91c;
+  }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+  
+  #product-container {
+    display: grid;
+    border: 1px solid #ffd91c;
+    padding: 25px;
+    grid-template-columns: repeat(3, 1fr);
+    width: 80%;
+    margin: auto;
+    gap: 50px;
+    text-align: center;
+  }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+  
+  #product-container {
+    display: grid;
+    border: 1px solid #ffd91c;
+    padding: 25px;
+    grid-template-columns: repeat(3, 1fr);
+    width: 80%;
+    margin: auto;
+    gap: 50px;
+    text-align: center;
+  }
 }

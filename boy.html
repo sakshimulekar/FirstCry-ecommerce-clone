@@ -15,27 +15,30 @@
 </head>
 
 <body>
-  <h1>👦 BOY FASHION 👦</h1>
   <nav>
-    <a href="product.html">All Products & Offers</a>
     <a href="toddler.html">Child</a>
     <a href="girl.html">Girl</a>
     <a href="boy.html">Boy</a>
-</nav>
-<div id="funcationality">
-  <input type="text" placeholder="Search Product">
-
-  <select name="sorting" id="sort">
-    <option value="default">Sort By Price</option>
-    <option value="LTH">Low - High</option>
-    <option value="HTL">High - Low</option>
-  </select>
-
-</div>
+  </nav>
+  <div id="funcationality">
+    <input type="text" placeholder="Search Product">
+    <select id="filter">
+      <option value="">All Products</option>
+      <option value="shirt">Shirt</option>
+      <option value="dress">Dress</option>
+      <option value="jeans">Jeans</option>
+    </select>
+    <select name="sorting" id="sort">
+      <option value="default">Sort By Price</option>
+      <option value="LTH">Low - High</option>
+      <option value="HTL">High - Low</option>
+    </select>
+  </div>
   <div id="product-container">
     <!-- Append all data here -->
   </div>
 </body>
 <script src="./scripts/boy.js"></script>
 <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+
 </html>

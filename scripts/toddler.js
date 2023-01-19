@@ -2,8 +2,7 @@ let mydata = [
   {
     "id": 1,
     "image": "https://cdn.fcglcdn.com/brainbees/images/products/300x364/12612293a.webp",
-    "title": "toddler",
-    "category": "child",
+    "title": "shoes",
     "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
     "price": 250
   },
@@ -11,89 +10,79 @@ let mydata = [
   {
     "id": 2,
     "image": "https://cdn.fcglcdn.com/brainbees/images/products/300x364/11909989a.webp",
-    "title": "toddler",
-    "category": "child",
+    "title": "sweator",
     "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
     "price": 631
   },
 
   {
     "id": 3,
-    "image": "https://cdn.fcglcdn.com/brainbees/images/products/300x364/9293740a.webp",
-    "category": "boy",
-    "title": "child",
+    "image": "https://cdn.fcglcdn.com/brainbees/images/products/300x364/9293740a.webp", 
+    "title": "dress",
     "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
     "price": 694
   },
 
   {
     "id": 4,
-    "image": "https://cdn.fcglcdn.com/brainbees/images/products/219x265/3218784a.webp",
-    "category": "boy",
-    "title": "child",
+    "image": "https://cdn.fcglcdn.com/brainbees/images/products/219x265/3218784a.webp", 
+    "title": "dress",
     "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
     "price": 631
   },
 
   {
     "id": 5,
-    "image": "https://cdn.fcglcdn.com/brainbees/images/products/219x265/11615387a.webp",
-    "category": "boy",
+    "image": "https://cdn.fcglcdn.com/brainbees/images/products/219x265/11615387a.webp", 
     "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
-    "title": "child",
+    "title": "dress",
     "price": 672
   },
 
   {
     "id": 6,
-    "image": "https://cdn.fcglcdn.com/brainbees/images/products/219x265/11725480a.webp",
-    "category": "boy",
+    "image": "https://cdn.fcglcdn.com/brainbees/images/products/219x265/11725480a.webp", 
     "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
-    "title": "child",
+    "title": "shoes",
     "price": 321
   },
 
   {
     "id": 7,
-    "image": "https://cdn.fcglcdn.com/brainbees/images/products/219x265/11734360a.webp",
-    "category": "boy",
-    "title": "child",
+    "image": "https://cdn.fcglcdn.com/brainbees/images/products/219x265/11734360a.webp", 
+    "title": "dress",
     "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
     "price": 299
   },
 
   {
     "id": 8,
-    "image": "https://cdn.fcglcdn.com/brainbees/images/products/438x531/11744443a.webp",
-    "category": "boy",
-    "title": "child",
+    "image": "https://cdn.fcglcdn.com/brainbees/images/products/438x531/11744443a.webp", 
+    "title": "shoes",
     "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
     "price": 220
   },
 
   {
     "id": 9,
-    "image": "https://cdn.fcglcdn.com/brainbees/images/products/219x265/12301457a.webp",
-    "category": "boy",
-    "title": "child",
+    "image": "https://cdn.fcglcdn.com/brainbees/images/products/219x265/12301457a.webp", 
+    "title": "dress",
     "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
     "price": 846
   },
 
   {
     "id": 10,
-    "image": "https://cdn.fcglcdn.com/brainbees/images/products/219x265/12717234a.webp",
-    "category": "boy",
-    "title": "child",
+    "image": "https://cdn.fcglcdn.com/brainbees/images/products/219x265/12717234a.webp", 
+    "title": "dress",
     "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
     "price": 923
   },
 
   {
     "id": 11,
-    "image": "https://cdn.fcglcdn.com/brainbees/images/products/219x265/12324913a.webp",
-    "category": "boy",
-    "title": "child",
+    "image": "https://cdn.fcglcdn.com/brainbees/images/products/219x265/12324913a.webp", 
+    "title": "dress",
     "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
     "price": 522
   }
@@ -126,7 +115,7 @@ let appendData = (mydata) => {
     let des = document.createElement("p");
     des.textContent = el.description;
 
-    let price = document.createElement("p");
+    let price = document.createElement("h5");
     price.textContent = "₹ " + el.price + ".00";
 
     let btn = document.createElement("button");
@@ -159,7 +148,7 @@ function Addtocart(el) {
 
   }
   if (present == true) {
-    swal("Already in Cart", "Product Already Present in Cart!", "error");
+    swal("Already in Cart", "Product Already Present in Cart!", "info");
 
   } else {
     arr.push(el)
@@ -196,4 +185,17 @@ sorted.addEventListener("change", function (event) {
   } else {
     appendData(mydata);
   }
+})
+
+filter.addEventListener("change", () => {
+  let filtered = mydata.filter((element) => {
+    if (element.title === filter.value) {
+      return true;
+    } else {
+      return false;
+    }
+  })
+
+
+  appendData(filtered)
 })
