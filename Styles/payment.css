@@ -4,16 +4,38 @@
     font-family:"Roboto-Bold";
 }
 
-/* body{
-    background-color: rgb(240, 240, 240);
-} */
+body{
+     background-color:rgb(169, 206, 223)
+}
+     
 .header{
     width: 500px;
-    height: 80vh;
-    border: solid 1px black;
+    height: 90vh;
+    border: solid 3px rgb(231, 210, 207);
     margin: auto;
     margin-top: 30px;
-    padding: 0px 5px 5px 5px;
+    padding: 0px 8px 5px 8px;
+}
+
+.header div{
+    margin-top: 4px;
+    font-weight: bold;
+    font-family: 'Roboto-Bold';
+    font-size: 14px;
+    line-height: 20px;
+    border-radius: 3px;
+    padding: 5px 0px;
+}
+
+#card-pay,
+#upi-pay,
+#paytm-pay,
+#net-pay,
+#cod-pay {
+    margin-top: 5px;
+    background-color: #fff;
+    cursor: pointer;
+
 }
 
 .header p,
@@ -25,7 +47,12 @@ h3{
     background-color: rgb(120, 30, 165);
     color: white;
     text-align: center;
-    font-size:18px;
+    font-size:19px;
+    display: block;
+    margin: 0px -8px;
+    font-family: 'Roboto-Bold';
+    line-height: 20px;
+    padding: 5px 0px;
 }
 
 .pay-opt{
@@ -34,6 +61,12 @@ h3{
 
 .pay-opt h4{
     font-weight: 300;
+    color: red;
+}
+
+span{
+    color: blue;
+    cursor: pointer;
 }
 
 img{
@@ -42,30 +75,45 @@ img{
 
 #card-pay{
     display: block;
+   
 }
 
 .credit-card{
     display: none;
 }
+
+.credit-card h3 {
+    background-color: #fff;
+    color: black;
+    margin: 0px 0px 2px 0px;
+}
+
 #card-pay h4:hover{
     cursor: pointer;
 }
 
 .card{
-    margin-left: 200px;
-    font-size: 20px;
+    margin-left: 213px;
+    font-size: 21px;
 }
 
 .card2 {
-    margin-left: 393px;
-    font-size: 20px;
+    margin-left: 381px;
+    font-size: 21px;
 }
+
+#card2 {
+    display: none;
+}
+
 #card-num{
     width: 200px;
     padding: 2px 4px;
     border-right-style: none;
     border-left-style: none;
     border-top-style: none;
+    font-size: 14px;
+    font-weight: bold;
 }
 
 #card-name{
@@ -75,17 +123,20 @@ img{
     border-right-style: none;
     border-left-style: none;
     border-top-style: none;
+    font-size: 14px;
+    font-weight: bold;
 }
 
 #card-btn{
     display: block;
     width: 65%;
     height: 35px;
-    background-color: rgb(3, 62, 97);
+    background-color: rgb(16, 152, 231);
     color: white;
     border: none;
     margin: auto;
     font-size: 17px;
+    cursor: pointer;
 }
 
 
@@ -100,8 +151,12 @@ img{
 }
 
 .UPI{
-    font-size: 20px;
-    margin-left: 335px;
+    font-size: 21px;
+    margin-left: 329px;
+}
+
+#upi-pay img {
+    width: 21px;
 }
 
 #upi-pay p{
@@ -126,7 +181,7 @@ img{
     height: 35px;
     margin: auto;
     font-size: 19px;
-    background-color: rgb(3, 62, 97);
+    background-color: rgb(16, 152, 231);
     color: #fff;
     border: none;
 }
@@ -142,8 +197,8 @@ img{
 }
 
 .ptm{
-    font-size: 20px;
-    margin-left: 241px;
+    font-size: 21px;
+    margin-left: 238px;
 }
 
 #ptm-input{
@@ -162,7 +217,7 @@ img{
     height: 35px;
     margin: auto;
     font-size: 15px;
-    background-color: rgb(3, 62, 97);
+    background-color: rgb(16, 152, 231);
     color: #fff;
     border: none;
 }
@@ -173,7 +228,7 @@ img{
     height: 35px;
     margin: auto;
     font-size: 15px;
-    background-color: rgb(3, 62, 97);
+    background-color: rgb(16, 152, 231);
     color: #fff;
     border: none;
 }
@@ -186,8 +241,8 @@ img{
 }
 
 .net{
-    font-size: 20px;
-    margin-left: 263px;
+    font-size: 21px;
+    margin-left: 262px;
 }
 
 #net-info p {
@@ -206,7 +261,7 @@ img{
     height: 35px;
     margin: auto;
     font-size: 15px;
-    background-color: rgb(3, 62, 97);
+    background-color: rgb(16, 152, 231);
     color: #fff;
     border: none;
     font-size: 16px;
@@ -225,8 +280,8 @@ img{
 }
 
 .cod {
-    font-size: 20px;
-    margin-left: 206px;
+    font-size: 21px;
+    margin-left: 205px;
    
 }
 
@@ -243,8 +298,10 @@ img{
     margin: auto;
     margin-top: 14px;
     font-size: 15px;
-    background-color: rgb(3, 62, 97);
+    background-color: rgb(16, 152, 231);
     color: #fff;
     border: none;
     font-size: 16px;
 }
+
+
