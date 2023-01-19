@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Page</title>
+    <link rel="stylesheet" href="Styles/admin.css">
+</head>
+<body>
+    <div class="container">
+        <nav>
+            <img src="images/weblogo.png" alt="">
+            <h2>Admin Pannel</h2>
+            <div class="user">
+                <img src="/images/user.png" alt="">
+                <h3>User</h3>
+            </div>
+        </nav>
+
+        <div class="container1">
+            <div class="card1">
+                <img src="images/man.png" alt="">
+                <h3>2345</h3>
+                <h2>Total User</h2>
+                <button>Track</button>
+            </div>
+            <div class="card2">
+                <img src="images/new-product.png" alt="">
+                <h3>9345</h3>
+                <h2>Total Product</h2>
+                <button>Track</button>
+            </div>
+            <div class="card3">
+                <img src="images/order.png" alt="">
+                <h3>13454</h3>
+                <h2>Total Orders</h2>
+                <button>Track</button>
+            </div>
+        </div>
+    </div>
+    
+</body>
+<script>
+    fetch("db.json")
+    .then(res=> res.json())
+    .then((data)=>{
+        console.log(data);
+    })
+</script>
+</html>
