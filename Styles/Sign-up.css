@@ -5,7 +5,7 @@
 }
 
 body {
-    background-image: url("/images/amitabh.jpg");
+    background-image: url("/images/amitabh2.jpg");
     /* background-repeat: no-repeat; */
     /* min-height: 100vh; */
     background-size: cover;
@@ -22,6 +22,7 @@ body {
     padding-top: 20px;
     padding-bottom: 48px;
     margin-top: 110px;
+    margin-right: 100px;
     background: linear-gradient(to right, #fdc830, #f37335);
     background-size: 100px 100px;
     background-repeat: no-repeat;
