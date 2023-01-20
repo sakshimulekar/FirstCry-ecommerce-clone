@@ -4,7 +4,8 @@
     "image": "https://cdn.fcglcdn.com/brainbees/images/products/300x364/12704810a.webp",
     "title": "boy T-shirt",
     "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
-    "price": 250
+    "price": 250,
+    "qty":1
   },
 
   {
