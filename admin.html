@@ -23,29 +23,31 @@
                 <img src="images/man.png" alt="">
                 <h3>2345</h3>
                 <h2>Total User</h2>
-                <button>Track</button>
+                <button id="userBtn">Track</button>
             </div>
             <div class="card2">
                 <img src="images/new-product.png" alt="">
                 <h3>9345</h3>
                 <h2>Total Product</h2>
-                <button>Track</button>
+                <button id="productBtn">Track</button>
             </div>
             <div class="card3">
                 <img src="images/order.png" alt="">
                 <h3>13454</h3>
                 <h2>Total Orders</h2>
-                <button>Track</button>
+                <button id="orderBtn">Track</button>
             </div>
+        </div>
+
+        <div class="data_wrapper">
+            <thead>
+                <tr>
+                    <th>Name</th>
+                </tr>
+            </thead>
         </div>
     </div>
     
 </body>
-<script>
-    fetch("db.json")
-    .then(res=> res.json())
-    .then((data)=>{
-        console.log(data);
-    })
-</script>
+<script src="admin.js"></script>
 </html>
