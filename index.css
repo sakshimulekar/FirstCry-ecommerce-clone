@@ -220,6 +220,152 @@
         background: none;
         font-size: 1.6rem;
     }
+    #logo input{
+        background: linear-gradient(to right, #f7ff00, #db36a4);
+        color: white;
+        height: 100vh;
+        position: fixed;
+        top: 0;
+        right: 0;
+        left: 0;
+        z-index: 10;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+       
+        transition: top 1s ease;
+        display: none;
+    }
 
 }
+h2{
+    margin-top: 15px;
+   text-align: center;
+   background-color: #EEEEEE;
+   padding-bottom: 15px;
+}
+.container{
+    width: 100%;
+    padding: 0 10%;
+    
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    background-color: #EEEEEE;
+}
+.card{
+    border-radius: 5px;
+    margin: 10px;
+}
+.card div{
+    border-radius: 5px;
+    padding-bottom: 15px;
+    background-color: white;
+}
+.card img{
+    border-radius: 5px;
+    width: 100%;
+}
+ .card:hover{
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+ }
+ .banner{
+    width: 100%;
+    padding: 15px 10% 0 10%;
+    text-align: center;
+    background-color: #EEEEEE;
+ }
+ .banner img{
+    width: 100%;
+ }
+ .banner1{
+    padding: 0 10%;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    background-color: #EEEEEE;
+ }
+ .banner1 img{
+    width: 100%;
+ }
+ .glorious{
+    width: 100%;
+    background-color: #EEEEEE;
+    padding: 0 10%;
+ }
+ .glorious img{
+    width: 100%;
+ }
+ .gloriouscards{
+    width: 100%;
+    padding: 0 10%;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    background-color: #EEEEEE;
+ }
+ .gloriouscards img{
+    width: 100%;
+ }
+ .age{
+    width: 100%;
+    padding: 0 10%;
+    display: grid;
+    grid-template-columns: repeat(8,1fr);
+    background-color: #EEEEEE;
+ }
+ .age img{
+    width: 100%;
+ }
+ .joinstyle{
+    width: 100%;
+    padding: 0 10%;
+    display: grid;
+    grid-template-columns: repeat(6,1fr);
+    background-color: #EEEEEE;
+ }
+ .joinstyle img{
+    width: 100%;
+ }
+ .brands{
+    width: 100%;
+    padding: 0 10%;
+    display: grid;
+    grid-template-columns: repeat(8,1fr);
+    background-color: #EEEEEE;
+ }
+ .brands img{
+    width: 100%;
+ }
+ .occasion{
+    width: 100%;
+    padding: 0 10%;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    background-color: #EEEEEE;
+ }
+ .occasion img{
+    width: 100%;
+ }
+ .babymore{
+    width: 100%;
+    padding: 0 10%;
+    display: grid;
+    grid-template-columns: repeat(7,1fr);
+    background-color: #EEEEEE;
+ }
+ .babymore img{
+    width: 100%;
+ }
+ .play{
+    width: 100%;
+    padding: 0 10%;
+    background-color: #EEEEEE;
+ }
+ .play .play1{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(8,1fr);
+    row-gap: none;
+ }
+ .play1 img{
+    width: 100%;
+ }
 
