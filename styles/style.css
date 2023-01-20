@@ -23,7 +23,7 @@ h1 {
 }
 
 #card {
-  /* border: 2px solid green; */
+ 
   padding: 10px;
   border: 1px solid lightgrey;
   border-radius: 8px;
@@ -86,7 +86,7 @@ input {
 }
 
 #funcationality {
-  /* border: 1px solid gray; */
+  
   display: flex;
   flex-direction: row;
   padding: 20px;
@@ -102,7 +102,7 @@ input {
   font-weight: bold;
   align-items: center;
 
-  /* border: none; */
+  
 }
 
 #filter {
