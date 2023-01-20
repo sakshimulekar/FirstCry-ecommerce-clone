@@ -23,14 +23,11 @@
              <h4 id="card-buttun">
                 <i class="fa-solid fa-credit-card" ></i>
                 CREDIT/DEBIT CARD
-                <i class="fa-solid fa-angle-down card"></i>
-                <div id="card2">
-                    <i class="fa-solid fa-angle-up card2"></i>
-                </div>
+                <i class="fa-solid fa-angle-down card" id="angel"></i>
                 </h4>
                 <div class="credit-card isactive" id="credit-card" >
                     <h3>Enter Your Card Details</h3>
-                    <input type="text" placeholder="Card number" id="card-num">
+                    <input type="number" placeholder="Card number" id="card-num">
                     <i class="fa-solid fa-credit-card"></i><br>
                     <input type="text" placeholder="Name on card" id="card-name"><br>
                     <select name="" id="month">
@@ -71,7 +68,7 @@
                         <option value="41">41</option>
                         <option value="42">42</option>
                     </select>
-                    <input type="text" placeholder="CVV" id="cvv"><br>
+                    <input type="number" placeholder="CVV" id="cvv"><br>
                     <input type="checkbox" id="checkbox">Secure your card as per RBI guidelines
                     <i class="fa-solid fa-circle-info"></i><br>
                     <button id="card-btn">Pay now</button>
@@ -81,7 +78,7 @@
                 <h4 id="upi-head">
                     <img src="https://play-lh.googleusercontent.com/B5cNBA15IxjCT-8UTXEWgiPcGkJ1C07iHKwm2Hbs8xR3PnJvZ0swTag3abdC_Fj5OfnP" alt="">
                         UPI
-                    <i class="fa-solid fa-angle-down UPI"></i>
+                    <i class="fa-solid fa-angle-down UPI" id="angel2"></i>
                 </h4>
                 <div id="upi">
                     <p>Please provide valid UPI handle i.e (Virtual Payment Address)</p>
@@ -93,12 +90,12 @@
                 <h4 id="paytm-data">
                     <img src="https://upload.wikimedia.org/wikipedia/commons/4/42/Paytm_logo.png" alt="">
                     PAYTM WALLET
-                    <i class="fa-solid fa-angle-down ptm"></i>
+                    <i class="fa-solid fa-angle-down ptm" id="angel3"></i>
                 </h4>
                 <div id="paytm">
                     <p>Link your Paytm Wallet and experience "One Step Payment" for all your future transactions on Firstcry</p>
                 <h4>Link your wallet using mobile no:</h4>
-                <input type="text" placeholder="Enter mobile number" id="ptm-input"><br>
+                <input type="number" placeholder="Enter mobile number" id="ptm-input"><br>
                 <button id="link-btn">LINK WALLET AND PAY</button>
                 OR
                 <p>if you do no wish to link your wallet to Firstcry click on pay now and continue to Paytm site to make Payment.</p>
@@ -108,7 +105,7 @@
             <div id="net-pay">
                 <h4 id="net-data">
                     <i class="fa-solid fa-building-columns"></i> NET BANKING
-                    <i class="fa-solid fa-angle-down net"></i>
+                    <i class="fa-solid fa-angle-down net" id="angel4"></i>
                 </h4>
                 <div id="net-info">
                     <select id="net-input">
@@ -130,7 +127,7 @@
                 <h4 id="cod-data">
                     <img class="image" src="https://png.pngtree.com/png-vector/20210502/ourlarge/pngtree-cash-on-delivery-png-png-image_3257801.jpg" alt="">
                     CASH ON DELIVERY
-                    <i class="fa-solid fa-angle-down cod"></i>
+                    <i class="fa-solid fa-angle-down cod" id="angel5"></i>
                 </h4>
                 <div id="cod-info">
                     <ul>

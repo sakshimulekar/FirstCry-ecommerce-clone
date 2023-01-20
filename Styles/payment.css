@@ -5,7 +5,7 @@
 }
 
 body{
-     background-color:rgb(169, 206, 223)
+    background-image: url(https://thumbs.dreamstime.com/z/newborn-baby-boy-clothes-hanging-rope-baby-fashion-colorful-babyboy-polka-dot-background-design-template-invitations-40436596.jpg);
 }
      
 .header{
@@ -53,6 +53,7 @@ h3{
     font-family: 'Roboto-Bold';
     line-height: 20px;
     padding: 5px 0px;
+    opacity: .8;
 }
 
 .pay-opt{
@@ -116,6 +117,11 @@ img{
     font-weight: bold;
 }
 
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+  }
+
 #card-name{
     width: 300px;
     padding: 2px 4px;
@@ -137,15 +143,10 @@ img{
     margin: auto;
     font-size: 17px;
     cursor: pointer;
+    
 }
 
-
-
-/* #card-pay:hover .credit-card{
-    display: block;
-} */
 /* UPI CSS*/
-
 #upi{
     display: none;
 }
@@ -184,6 +185,7 @@ img{
     background-color: rgb(16, 152, 231);
     color: #fff;
     border: none;
+    cursor: pointer;
 }
 
 /* PAYTM CSS */
@@ -220,6 +222,7 @@ img{
     background-color: rgb(16, 152, 231);
     color: #fff;
     border: none;
+    cursor: pointer;
 }
 
 #ptm-btn {
@@ -231,6 +234,7 @@ img{
     background-color: rgb(16, 152, 231);
     color: #fff;
     border: none;
+    cursor: pointer;
 }
 
 /* NET BANKING CSS */
@@ -265,6 +269,7 @@ img{
     color: #fff;
     border: none;
     font-size: 16px;
+    cursor: pointer;
 }
 
 /* COD PAYMENT CSS */
@@ -302,6 +307,7 @@ img{
     color: #fff;
     border: none;
     font-size: 16px;
+    cursor: pointer;
 }
 
 
