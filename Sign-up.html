@@ -74,8 +74,10 @@
 
             if (isPresent === true) {
                 header.innerText = "Account is already Present"
-                header.style.color = "#660000"
-                window.location.href = "Sign-up.html"
+                setTimeout(()=>{
+                    header.style.color = "#660000"
+                    window.location.href = "Sign-up.html"
+                },1700)
             } else {
                 arrData.push(formObj);
                 localStorage.setItem("details", JSON.stringify(arrData));

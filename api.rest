@@ -1,5 +1,5 @@
 ###
 @api = http://localhost:3000/
 ###
-GET  http://localhost:3000/data/
+GET https://63cadb86d0ab64be2b5c2749.mockapi.io/boys/16
 Content-Type: application/json
