@@ -145,7 +145,7 @@ function fetchData(data){
 
         localStorage.setItem("add-to-cart",JSON.stringify(data));
 
-        //.....append parent......
+        //.....append parent......//
         div2.append(img)
         removeBtn.append(box);
         sel.append(select);
