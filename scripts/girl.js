@@ -268,7 +268,7 @@ let mydata = [
 //     })
 
 let appendData = (mydata) => {
-  // console.log(data)
+
   let container = document.getElementById("product-container");
   container.innerHTML = "";
   mydata.forEach((el) => {
