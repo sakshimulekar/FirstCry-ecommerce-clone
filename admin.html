@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,6 +8,7 @@
     <title>Admin Page</title>
     <link rel="stylesheet" href="Styles/admin.css">
 </head>
+
 <body>
     <div class="container">
         <nav>
@@ -18,36 +20,30 @@
             </div>
         </nav>
 
-        <div class="container1">
-            <div class="card1">
+        <div class="container1" id="cardContainer">
+            <div id="card1">
                 <img src="images/man.png" alt="">
                 <h3>2345</h3>
                 <h2>Total User</h2>
                 <button id="userBtn">Track</button>
             </div>
-            <div class="card2">
+            <div id="card2">
                 <img src="images/new-product.png" alt="">
                 <h3>9345</h3>
                 <h2>Total Product</h2>
                 <button id="productBtn">Track</button>
             </div>
-            <div class="card3">
+            <div id="card3">
                 <img src="images/order.png" alt="">
                 <h3>13454</h3>
                 <h2>Total Orders</h2>
                 <button id="orderBtn">Track</button>
             </div>
         </div>
-
-        <div class="data_wrapper">
-            <thead>
-                <tr>
-                    <th>Name</th>
-                </tr>
-            </thead>
+        <div class="data_wrapper" id="mainSection">
         </div>
     </div>
-    
 </body>
 <script src="admin.js"></script>
+
 </html>

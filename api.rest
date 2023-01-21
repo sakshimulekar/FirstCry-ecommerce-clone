@@ -1,5 +1,17 @@
+
 ###
-@api = http://localhost:3000/
+GET https://test-api2-73ku.onrender.com/data
+
 ###
-GET https://63cadb86d0ab64be2b5c2749.mockapi.io/boys/16
+
+###
+PATCH  https://test-api2-73ku.onrender.com/Footwear/40
+
 Content-Type: application/json
+{
+   "image": "https://cdn.fcglcdn.com/brainbees/images/products/300x364/11882234a.webp",
+    "title": "Pine Kids Lace Up Party Wear Shoes- Black",
+    "d-price": 800,
+    "original pricer2": 1100,
+    "age": "8 - 9Y"
+}  
