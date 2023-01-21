@@ -1,262 +1,20 @@
-let mydata = [
-  {
-    "id": 1,
-    "image": "https://cdn.fcglcdn.com/brainbees/images/products/300x364/12704810a.webp",
-    "title": "shirt",
-    "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
-    "price": 250
-  },
+let defaultArr = []
+let myData = []
 
-  {
-    "id": 2,
-    "image": "https://cdn.fcglcdn.com/brainbees/images/products/300x364/12652276a.webp",
-    "title": "shirt",
-    "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
-    "price": 350
-  },
+fetch("https://footwear-server.vercel.app/boys")
+.then(res => res.json())
+.then((data)=>{
+  appendData(data)
+  myData = data
+  defaultArr = data
+})
 
-  {
-    "id": 3,
-    "image": "https://cdn.fcglcdn.com/brainbees/images/products/300x364/11425519a.webp",
-    "title": "shirt",
-    "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
-    "price": 450
-  },
-
-  {
-    "id": 4,
-    "image": "https://cdn.fcglcdn.com/brainbees/images/products/300x364/12141710a.webp",
-    "title": "shirt",
-    "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
-    "price": 250
-  },
-
-  {
-    "id": 5,
-    "image": "https://cdn.fcglcdn.com/brainbees/images/products/300x364/12223087a.webp",
-    "title": "shirt",
-    "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
-    "price": 250
-  },
-
-  {
-    "id": 6,
-    "image": "https://cdn.fcglcdn.com/brainbees/images/products/300x364/12627589a.webp",
-    "title": "shirt",
-    "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
-    "price": 350
-  },
-
-  {
-    "id": 7,
-    "image": "https://cdn.fcglcdn.com/brainbees/images/products/300x364/12627464a.webp",
-    "title": "shirt",
-    "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
-    "price": 350
-  },
-
-  {
-    "id": 8,
-    "image": "https://cdn.fcglcdn.com/brainbees/images/products/300x364/11683453a.webp",
-    "title": "shirt",
-    "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
-    "price": 250
-  },
-
-  {
-    "id": 9,
-    "image": "https://cdn.fcglcdn.com/brainbees/images/products/300x364/11568732b.jpg",
-    "title": "shirt",
-    "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
-    "price": 450
-  },
-
-  {
-    "id": 10,
-    "image": "https://cdn.fcglcdn.com/brainbees/images/products/300x364/12442602b.jpg",
-    "title": "shirt",
-    "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
-    "price": 450
-  },
-
-  {
-    "id": 11,
-    "image": "https://cdn.fcglcdn.com/brainbees/images/products/300x364/11568732b.jpg",
-    "title": "dress",
-    "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
-    "price": 1472
-  },
-
-  {
-    "id": 12,
-    "image": "https://cdn.fcglcdn.com/brainbees/images/products/300x364/12248274a.webp",
-    "title": "dress",
-    "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
-    "price": 1690
-  },
-
-  {
-    "id": 13,
-    "image": "https://cdn.fcglcdn.com/brainbees/images/products/300x364/12602537a.webp",
-    "title": "dress",
-    "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
-    "price": 1800
-  },
-
-  {
-    "id": 14,
-    "image": "https://cdn.fcglcdn.com/brainbees/images/products/300x364/11712081a.webp",
-    "title": "dress",
-    "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
-    "price": 2279
-  },
-
-  {
-    "id": 15,
-    "image": "https://cdn.fcglcdn.com/brainbees/images/products/300x364/12490417a.webp",
-    "title": "dress",
-    "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
-    "price": 1300
-  },
-
-  {
-    "id": 16,
-    "image": "https://cdn.fcglcdn.com/brainbees/images/products/300x364/11515574a.webp",
-    "title": "dress",
-    "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
-    "price": 1500
-  },
-
-  {
-    "id": 17,
-    "image": "https://cdn.fcglcdn.com/brainbees/images/products/300x364/12688812a.webp",
-    "title": "dress",
-    "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
-    "price": 2500
-  },
-
-  {
-    "id": 18,
-    "image": "https://cdn.fcglcdn.com/brainbees/images/products/300x364/11228570b.jpg",
-    "title": "dress",
-    "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
-    "price": 1970
-  },
-
-  {
-    "id": 19,
-    "image": "https://cdn.fcglcdn.com/brainbees/images/products/300x364/12688777a.webp",
-    "title": "dress",
-    "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
-    "price": 1799
-  },
-
-  {
-    "id": 20,
-    "image": "https://cdn.fcglcdn.com/brainbees/images/products/300x364/11214403a.webp",
-    "title": "dress",
-    "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
-    "price": 1999
-  },
-
-  {
-    "id": 21,
-    "image": "https://cdn.fcglcdn.com/brainbees/images/products/300x364/12143032a.webp",
-    "title": "jeans",
-    "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
-    "price": 512
-  },
-
-  {
-    "id": 22,
-    "image": "https://cdn.fcglcdn.com/brainbees/images/products/300x364/11425440a.webp",
-    "title": "jeans",
-    "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
-    "price": 710
-  },
-
-  {
-    "id": 23,
-    "image": "https://cdn.fcglcdn.com/brainbees/images/products/300x364/10851397a.webp",
-    "title": "jeans",
-    "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
-    "price": 710
-  },
-
-  {
-    "id": 24,
-    "image": "https://cdn.fcglcdn.com/brainbees/images/products/300x364/11748779a.webp",
-    "title": "jeans",
-    "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
-    "price": 591
-  },
-
-  {
-    "id": 25,
-    "image": "https://cdn.fcglcdn.com/brainbees/images/products/300x364/12254761a.webp",
-    "title": "jeans",
-    "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
-    "price": 680
-  },
-
-  {
-    "id": 26,
-    "image": "https://cdn.fcglcdn.com/brainbees/images/products/300x364/11823502a.webp",
-    "title": "jeans",
-    "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
-    "price": 670
-  },
-
-  {
-    "id": 27,
-    "image": "https://cdn.fcglcdn.com/brainbees/images/products/300x364/12254922a.webp",
-    "title": "jeans",
-    "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
-    "price": 715
-  },
-
-  {
-    "id": 28,
-    "image": "https://cdn.fcglcdn.com/brainbees/images/products/300x364/11422158a.webp",
-    "title": "jeans",
-    "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
-    "price": 880
-  },
-
-  {
-    "id": 29,
-    "image": "https://cdn.fcglcdn.com/brainbees/images/products/300x364/10734523a.webp",
-    "title": "jeans",
-    "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
-    "price": 834
-  },
-
-  {
-    "id": 30,
-    "image": "https://cdn.fcglcdn.com/brainbees/images/products/300x364/12738988a.webp",
-    "title": "jeans",
-    "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
-    "price": 999
-  }
-]
-
-let defaultArr = [...mydata]
-// fetch("../Database/a.json")
-// .then((res)=>{
-//     return res.json();
-// })
-// .then((data)=>{
-//     appendData(data)
-// })
-// .catch((err)=>{
-//     return err
-// })
-
-let appendData = (mydata) => {
+let appendData = (myData) => {
 
   let container = document.getElementById("product-container");
   container.innerHTML = "";
-  mydata.forEach((el) => {
+
+  myData.forEach((el) => {
     let card = document.createElement("div");
     card.setAttribute("id", "card");
 
@@ -285,7 +43,8 @@ let appendData = (mydata) => {
 
   })
 }
-appendData(mydata);
+
+appendData(myData);
 
 function Addtocart(el) {
   let arr = JSON.parse(localStorage.getItem('add-to-cart')) || [];
@@ -306,9 +65,7 @@ function Addtocart(el) {
     arr.push(el)
     localStorage.setItem('add-to-cart', JSON.stringify(arr))
     swal("Success", "Your Product Added to Cart!", "success");
-    // swal.style.backgroundColor = "green"
-    
-
+   
   }
 
 }
@@ -316,39 +73,77 @@ function Addtocart(el) {
 
 let sorted = document.querySelector("#sort");
 sorted.addEventListener("change", function (event) {
-
   let val = document.querySelector("#sort").value;
-  console.log(val)
 
   if (val == "LTH") {
-    let data1 = mydata.sort(function (a, b) {
+    let data1 = myData.sort(function (a, b) {
       return a.price - b.price;
 
     })
     appendData(data1)
 
   } else if (val == "HTL") {
-    let sorteddata = mydata.sort(function (a, b) {
+    let sorteddata = myData.sort(function (a, b) {
       return b.price - a.price;
 
     })
     appendData(sorteddata)
 
   } else if(val == "default") {
-    appendData(defaultArr);
-    console.log(defaultArr)
+    fetch("https://footwear-server.vercel.app/boys")
+.then(res => res.json())
+.then((data)=>{
+ 
+  appendData(data)
+ 
+})
   }
 })
 
-filter.addEventListener("change", () => {
-  let filtered = mydata.filter((element) => {
-    if (element.title === filter.value) {
-      return true;
-    } else {
-      return false;
-    }
-  })
 
-  
-  appendData(filtered)
+filter.addEventListener("change", (e) => {
+
+  let val = e.target.value
+
+  if(val=="boy T-shirt"){
+    let filtered = myData.filter(el=>{
+      if(el.title==val){
+        return true;
+      }else{
+        return false;
+      }
+    })
+    appendData(filtered)
+  }
+  else if(val=="ethnic wear"){
+    let filtered = myData.filter(el=>{
+      if(el.title==val){
+        return true;
+      }else{
+        return false;
+      }
+    })
+    appendData(filtered)
+  }
+  else if(val=="jeans & trousers"){
+    let filtered = myData.filter(el=>{
+      if(el.title==val){
+        return true;
+      }else{
+        return false;
+      }
+    })
+    appendData(filtered)
+  }
+  else if(val=="all"){
+    let filtered = myData.filter(el=>{
+      if(el.title==val){
+        return true;
+      }else{
+        return false;
+      }
+    })
+    appendData(defaultArr)
+  }
+
 })
