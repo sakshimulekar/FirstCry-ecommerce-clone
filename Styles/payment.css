@@ -8,6 +8,13 @@ body{
     background-image: url(https://thumbs.dreamstime.com/z/newborn-baby-boy-clothes-hanging-rope-baby-fashion-colorful-babyboy-polka-dot-background-design-template-invitations-40436596.jpg);
 }
      
+h6{
+    font-size: 30px;
+    display: none;
+    text-align: center;
+    margin: 100px 0px ;
+    color: rgb(77, 8, 37);
+}
 .header{
     width: 500px;
     height: 90vh;
@@ -15,6 +22,7 @@ body{
     margin: auto;
     margin-top: 30px;
     padding: 0px 8px 5px 8px;
+    position: relative;
 }
 
 .header div{
@@ -74,9 +82,9 @@ img{
     width: 25px;
 } 
 
+/* CREDIT CARD CSS */
 #card-pay{
     display: block;
-   
 }
 
 .credit-card{
@@ -115,11 +123,17 @@ img{
     border-top-style: none;
     font-size: 14px;
     font-weight: bold;
+    outline: none;
 }
 
 input::-webkit-inner-spin-button {
     -webkit-appearance: none;
     margin: 0;
+  }
+
+  input:focus {
+    border-bottom-color: rgb(231, 102, 16);
+    transition: border-bottom-color 0.5s ease-out;
   }
 
 #card-name{
@@ -131,6 +145,11 @@ input::-webkit-inner-spin-button {
     border-top-style: none;
     font-size: 14px;
     font-weight: bold;
+    outline: none;
+}
+
+#cvv {
+    outline: none;
 }
 
 #card-btn{
@@ -174,6 +193,7 @@ input::-webkit-inner-spin-button {
     border-right-style: none;
     border-left-style: none;
     border-top-style: none;
+    outline: none;
 }
 
 #upi-btn {
@@ -211,6 +231,7 @@ input::-webkit-inner-spin-button {
     border-right-style: none;
     border-left-style: none;
     border-top-style: none;
+    outline: none;
 }
 
 #link-btn {
@@ -264,7 +285,6 @@ input::-webkit-inner-spin-button {
     width: 70%;
     height: 35px;
     margin: auto;
-    font-size: 15px;
     background-color: rgb(16, 152, 231);
     color: #fff;
     border: none;
@@ -311,3 +331,53 @@ input::-webkit-inner-spin-button {
 }
 
 
+/* POPUP CSS */
+.popup {
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    width: 73%;
+    display: none;
+    background-color: rgb(235, 238, 238);
+    text-align: center;
+    border-radius: 6px;
+    padding: 10px;
+    position: absolute;
+    z-index: 1;
+    bottom: 40%;
+    top: 20%;
+    left: 16%;
+    right: 10%;
+}
+
+.popup img {
+    width: 50%;
+}
+
+.popup-text{
+    margin-top: 3%;
+}
+
+#input {
+    z-index: 1;
+    margin-top: 10px;
+    border: 1px solid rgb(7, 218, 102);
+    padding: 2px 1px;
+    font-size: 15px;
+}
+
+#input:focus {
+    outline: 1px solid  rgb(7, 218, 102);
+}
+
+#button {
+    padding: 4px 20px;
+    font-size: 14px;
+    background-color: rgb(4, 107, 192);
+    border: solid 1px rgb(4, 107, 192);
+    border-radius: 3px;
+    margin-top: 5px;
+    cursor: pointer;
+    color: #fff;
+}
