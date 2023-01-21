@@ -11,7 +11,6 @@ for(let p of getData){
 // console.log(getData)
 
 var card = document.getElementById("product-container");
-
 let heading = document.getElementById("heading")
 
 let sum = document .getElementById("sum")
@@ -35,9 +34,6 @@ function fetchData(data){
 
     data.forEach((ele) => {
 
-        let main= document.createElement("div");
-        main.setAttribute("id", "main");
-
 
         let div = document.createElement("div");
         div.setAttribute("id", "card");
@@ -45,7 +41,7 @@ function fetchData(data){
         let div1 = document.createElement("div");
         div1.setAttribute("class", "text");
 
-        let title = document.createElement("h2");
+        let title = document.createElement("h4");
         title.innerText = ele.title;
 
         let div2 = document.createElement("div");
@@ -57,16 +53,11 @@ function fetchData(data){
         description.innerText = ele.description;
 
         let prize = document.createElement("h3");
-        prize.innerText = ele.price;
+        prize.innerText = "Price : "+ele.price+".00 ₹";
        
-        //sum.textContent=sum+ele.price;
-
-        let down = document.createElement("div");
-        down.setAttribute("id", "down");
         let removeBtn = document.createElement("button");
-        removeBtn.innerText = `Remove `;
+        removeBtn.innerText = `Remove ~`;
         removeBtn.setAttribute("id","btn")
-
         removeBtn.addEventListener("click",()=>{
 
             data.splice(ele,1);
@@ -84,6 +75,7 @@ function fetchData(data){
         box.innerHTML = ` <i class="fa-solid fa-trash"></i>`;
 
         let shortBtn = document.createElement("button");
+        shortBtn.setAttribute("id","btn1")
         shortBtn.innerText = "❤️ Move to Shortlist";
 
         shortBtn.addEventListener("click",()=>{
@@ -145,22 +137,18 @@ function fetchData(data){
 
         localStorage.setItem("add-to-cart",JSON.stringify(data));
 
-        //.....append parent......//
         div2.append(img)
         removeBtn.append(box);
         sel.append(select);
         select.append(opt1,opt2,opt3,opt4,opt5);
         size.append(siz)
         siz.append(s1,s2,s3,s4,s5)
-        div1.append(title,description,prize,sel,size)
+        div1.append(title,description,prize,sel,size,removeBtn,shortBtn)
         div.append(div2,div1);
-        down.append(removeBtn,shortBtn)
-        main.append(div,down)
-        card.append(main);
-        //main.append(card)
+        card.append(div);
+     
         total = total+ele.price*ele.Q
-        console.log(total)
-        
+       
     })
     
     heading.innerText = total
