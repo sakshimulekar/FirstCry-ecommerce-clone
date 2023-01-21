@@ -1,13 +1,12 @@
 let defaultArr = []
 let myData = []
 
-fetch("https://footwear-server.vercel.app/toddler")
+fetch("https://footwear-server.vercel.app/Footwear")
   .then(res => res.json())
   .then((data) => {
     appendData(data)
     myData = data
     defaultArr = data
-    console.log(data)
   })
 
 let appendData = (myData) => {
@@ -20,16 +19,16 @@ let appendData = (myData) => {
     card.setAttribute("id", "card");
 
     let img = document.createElement("img");
-    img.src = el.image;
+    img.src = el.lmage;
 
     let name = document.createElement("h3");
-    name.textContent = el.title;
+    name.textContent = el.title?el.title.substring(0,10):"no-title";
 
     let des = document.createElement("p");
-    des.textContent = el.description;
+    des.textContent = "Lorem ipsum dolor sit amet consectetur adipisicing elit.";
 
     let price = document.createElement("h5");
-    price.textContent = "₹ " + el.price + ".00";
+    price.textContent ="₹ "+ Math.floor(el["d-price"])+".00";
 
     let btn = document.createElement("button");
     btn.textContent = "Add to Cart";
@@ -75,27 +74,27 @@ function Addtocart(el) {
 let sorted = document.querySelector("#sort");
 sorted.addEventListener("change", function (event) {
   let val = document.querySelector("#sort").value;
-
+  console.log(val)
   if (val == "LTH") {
     let data1 = myData.sort(function (a, b) {
-      return a.price - b.price;
+      return a["d-price"] - b["d-price"];
 
     })
     appendData(data1)
 
   } else if (val == "HTL") {
     let sorteddata = myData.sort(function (a, b) {
-      return b.price - a.price;
+      return b["d-price"] - a["d-price"];
 
     })
     appendData(sorteddata)
 
   } else if (val == "default") {
-    fetch("https://footwear-server.vercel.app/toddler")
+    fetch("https://footwear-server.vercel.app/Footwear")
       .then(res => res.json())
       .then((data) => {
         appendData(data)
-
+        console.log(data)
       })
   }
 })
@@ -105,7 +104,7 @@ filter.addEventListener("change", (e) => {
 
   let val = e.target.value
 
-  if (val == "child") {
+  if (val == "Pine Kids Lace Up Party Wear Shoes- Black") {
     let filtered = myData.filter(el => {
       if (el.title == val) {
         return true;
@@ -115,7 +114,17 @@ filter.addEventListener("change", (e) => {
     })
     appendData(filtered)
   }
-  else if (val == "toddler") {
+  else if (val == "Babyoye Sneakers with Velcro Closure - Grey") {
+    let filtered = myData.filter(el => {
+      if (el.title == val) {
+        return true;
+      } else {
+        return false;
+      }
+    })
+    appendData(filtered)
+  }
+  else if (val == "Babyoye Flip Flops With Velcro Closure Rainbow Print & Patch - Blue") {
     let filtered = myData.filter(el => {
       if (el.title == val) {
         return true;
