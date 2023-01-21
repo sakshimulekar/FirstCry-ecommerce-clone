@@ -1,3 +1,41 @@
+let lsData = JSON.parse(localStorage.getItem('userdata')) || [];
+
+// SET DATA IN STOREAGE/// <= AND GET FROM STORAGE =>/////
+let cartdata = JSON.parse(localStorage.getItem('add-to-cart'));
+let price;
+ cartdata.map((item) =>{
+   price = item.price;
+ })
+
+document.getElementById('cod-btn').innerText = 'PLACED COD ₹ '+ price;
+document.getElementById('card-btn').innerText = 'PAY NOW ₹ '+ price;
+document.getElementById('upi-btn').innerText = 'PAY NOW ₹ '+ price;
+document.getElementById('ptm-btn').innerText = 'PAY NOW ₹ '+ price;
+document.getElementById('net-btn').innerText = 'PAY NOW ₹ '+ price;
+
+//// POPUP FUNCTION /////
+let pop = document.querySelector('.popup');
+let proccess = document.querySelector('.header');
+let text = document.querySelector('h6');
+
+
+/// <= FUNCTION FOR PROCCESSING => /////
+function proccessData(){
+
+   setTimeout((time) => {
+      proccess.style.display = 'block';
+      text.style.display = 'none'
+   }, 1500)
+
+   setTimeout((el) => {
+      pop.style.display = 'block'
+   }, 2000)
+
+   proccess.style.display = 'none'
+   text.style.display = 'block'
+}
+
+
    // CREDIT/DEBIT CARD LIST //
  document.getElementById('card-buttun').addEventListener('click', ()=>{
 
@@ -94,8 +132,6 @@
  })
 
 
-let lsData = JSON.parse(localStorage.getItem('userdata')) || [];
-
 // CREDIT/ DEBIT CARD DATA ///
 document.getElementById('card-btn').addEventListener('click', creditData)
 const checkdata= document.getElementById('checkbox')
@@ -114,31 +150,31 @@ function creditData(){
       &&(payobj.cardNum!=='') && (payobj.cardCVV !=='') 
       && payobj.cardNum.length==16 && payobj.cardCVV.length==4 || payobj.cardCVV.length==3){
          lsData.push(payobj)
-         localStorage.setItem('userdata', JSON.stringify(lsData))
+         proccessData()
+         localStorage.setItem('paymentdata', JSON.stringify(lsData))
       }else {
       alert('check your check input')
    }
 }
-document.getElementById('card-btn').innerText = 'PAY NOW ₹';
 
 // UPI DATA //
 document.getElementById('upi-btn').addEventListener('click', upiData)
 function upiData(){
 
    event.preventDefault()
-
    let upiobj = {
       Id: document.getElementById('upi-input').value
    }
   lsData.push(upiobj);
    if(upiobj.Id !== ''){
       lsData.push(upiobj)
-      localStorage.setItem('userdata', JSON.stringify(lsData))
+       proccessData()
+      localStorage.setItem('paymentdata', JSON.stringify(lsData))
    }else {
       alert('something went wrong');
    }
 }
-document.getElementById('upi-btn').innerText = 'PAY NOW ₹';
+
 
 
 // PAYTM DATA //
@@ -155,16 +191,15 @@ function paytmData(){
    }
    else {
       lsData.push(ptmobj)
-      localStorage.setItem('userdata', JSON.stringify(lsData))
+      localStorage.setItem('paymentdata', JSON.stringify(lsData))
    }
 }
 
 
-// document.getElementById('ptm-btn').addEventListener('click', function() {
+ document.getElementById('ptm-btn').addEventListener('click', function() {
+   proccessData()
+ })
 
-
-// })
-document.getElementById('ptm-btn').innerText = 'PAY NOW ₹';
 
 // NET-BANKING DATA //
 document.getElementById('net-btn').addEventListener('click', bankData)
@@ -175,12 +210,17 @@ function bankData(){
       data: document.getElementById('net-input').value
    }
    lsData.push(netobj)
-   localStorage.setItem('userdata', JSON.stringify(lsData))
+  // proccessData()
+   localStorage.setItem('paymentdata', JSON.stringify(lsData))
 }
-document.getElementById('net-btn').innerText = 'PAY NOW ₹';
+
 
 // COD DATA //
-// document.getElementById('').addEventListener('click', function() {
+document.getElementById('').addEventListener('click', function() {
+   proccessData()
+})
 
-// })
-document.getElementById('cod-btn').innerText = 'PAY NOW ₹';
+document.getElementById('button').addEventListener('click', function() {
+   
+   window.location.href = "index.html";
+})
