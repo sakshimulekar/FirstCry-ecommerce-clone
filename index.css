@@ -122,7 +122,6 @@
      width: 90%;
      position: relative;
      margin: auto;
-     z-index: -1;
 }
 .prev, .next{
     cursor: pointer;
@@ -301,6 +300,12 @@
         display: block;
     
     }
+    .slideshow-container{
+        width: 90%;
+        position: relative;
+        margin: auto;
+        z-index: -1;
+}
 }
 h2{
     margin-top: 15px;
