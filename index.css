@@ -14,6 +14,9 @@
     justify-content: space-between;
     padding: 0 5%;
      height: 65px;
+     position: sticky;
+     top: 0;
+     background-color: white;
 }
 #logo{
     display: flex;
@@ -22,16 +25,18 @@
 }
 #logo a{
     width: 100%;
-    margin-right: 0px;
+    margin-right: 30px;
 }
 #logo input{
     display: flex;
     flex: 1;
     max-width: 900px;
-    height: 25px;
+    height: 30px;
     border-radius: 5px;
     border-width: 1px;
     border-color: #CFD8DC;
+    padding-right: 100px;
+    padding-left: 10px;
 } 
 #navbar{
     display: flex;
@@ -51,6 +56,9 @@
     justify-content: center;
     background-color: #FDD835;
     height: 57px;
+    /* position: sticky;
+    top: 50px;
+    z-index: 100; */
 }
 
 .navbar1{
@@ -87,6 +95,7 @@
     visibility: hidden;
     margin-top: 0;
     z-index: 100;
+    
 }
 .navbar1 li:hover .dropmenu{
     opacity: 1;
@@ -99,7 +108,6 @@
 .dropmenu li a {
     width: 100%;
     display: block;
-
 }
 
 .mySlides{
@@ -114,11 +122,7 @@
      width: 90%;
      position: relative;
      margin: auto;
-     
-}
-.slideshow-container img{
-    height: 100%;
-    width: 100%;
+     z-index: -1;
 }
 .prev, .next{
     cursor: pointer;
@@ -216,6 +220,10 @@
         font-size: 20px;
         
     }
+    .menunav a{
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        color: #263238;
+    }
     #navbar li a:hover{
         background: none;
         font-size: 1.6rem;
@@ -266,8 +274,32 @@
         font-size: 15px;
         font-weight: 550;
     }
-    .openMenu1 a:hover{
+    .openMenu1 li:hover{
         background-color: white;
+    }
+    #header1 .dropmenu{
+        background-color: white;
+        width: 180px;
+        top: 113px;
+        line-height: 45px;
+        position: absolute;
+        opacity: 0;
+        visibility: hidden;
+        margin-top: 0;
+        z-index: 100;
+    }
+    #header1 li:hover .dropmenu{
+        opacity: 1;
+        visibility: visible;
+       
+    }
+    .dropmenu li:hover{
+        text-shadow: 1px 1px black;
+    }
+    .dropmenu li a {
+        width: 100%;
+        display: block;
+    
     }
 }
 h2{
@@ -400,4 +432,42 @@ h2{
  .play1 img{
     width: 100%;
  }
+ .foot{
+    padding: 50px 200px 30px 200px;
+    
+    background-color: #81D4FA;
+    
+}
+.foot h1{
+    text-align: left;
+    color: #FB8C00;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    
+    
+}
+.service{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 10px;
+
+}
+.col{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+.service h4{
+    color: black;
+    font-size: 16px;
+    font-weight: 300;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+.service a{
+    text-decoration: none;
+    color: black;
+    padding-bottom: 5px;
+}
 
