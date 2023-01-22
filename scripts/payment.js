@@ -23,7 +23,7 @@ let text = document.querySelector('h6');
 function proccessData(){
 
    setTimeout((time) => {
-      proccess.style.display = 'block';
+      // proccess.style.display = 'block';
       text.style.display = 'none'
    }, 1500)
 
@@ -37,7 +37,7 @@ function proccessData(){
 
 
    // CREDIT/DEBIT CARD LIST //
- document.getElementById('card-buttun').addEventListener('click', ()=>{
+   document.getElementById('card-buttun').addEventListener('click', ()=>{
 
    document.getElementById('upi').style.display = 'none'
    document.getElementById('paytm').style.display = 'none'
@@ -198,6 +198,7 @@ function paytmData(){
 
  document.getElementById('ptm-btn').addEventListener('click', function() {
    proccessData()
+
  })
 
 

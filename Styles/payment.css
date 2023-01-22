@@ -5,6 +5,7 @@
 }
 
 body{
+    position: relative;
     background-image: url(https://thumbs.dreamstime.com/z/newborn-baby-boy-clothes-hanging-rope-baby-fashion-colorful-babyboy-polka-dot-background-design-template-invitations-40436596.jpg);
 }
      
@@ -16,13 +17,14 @@ h6{
     color: rgb(77, 8, 37);
 }
 .header{
+    display: block;
     width: 500px;
     height: 90vh;
     border: solid 3px rgb(231, 210, 207);
+    background-color: #f0ffff;
     margin: auto;
     margin-top: 30px;
     padding: 0px 8px 5px 8px;
-    position: relative;
 }
 
 .header div{
@@ -162,7 +164,7 @@ input::-webkit-inner-spin-button {
     margin: auto;
     font-size: 17px;
     cursor: pointer;
-    
+    opacity: 0.8;
 }
 
 /* UPI CSS*/
@@ -206,6 +208,7 @@ input::-webkit-inner-spin-button {
     color: #fff;
     border: none;
     cursor: pointer;
+    opacity: 0.8;
 }
 
 /* PAYTM CSS */
@@ -244,6 +247,7 @@ input::-webkit-inner-spin-button {
     color: #fff;
     border: none;
     cursor: pointer;
+    opacity: 0.8;
 }
 
 #ptm-btn {
@@ -256,11 +260,10 @@ input::-webkit-inner-spin-button {
     color: #fff;
     border: none;
     cursor: pointer;
+    opacity: 0.8;
 }
 
 /* NET BANKING CSS */
-
-
 #net-info {
     display: none;
 }
@@ -290,10 +293,10 @@ input::-webkit-inner-spin-button {
     border: none;
     font-size: 16px;
     cursor: pointer;
+    opacity: 0.8;
 }
 
 /* COD PAYMENT CSS */
-
 #cod-info {
     display: none;
 }
@@ -328,6 +331,7 @@ input::-webkit-inner-spin-button {
     border: none;
     font-size: 16px;
     cursor: pointer;
+    opacity: 0.8;
 }
 
 
@@ -337,33 +341,36 @@ input::-webkit-inner-spin-button {
     -moz-user-select: none;
     -ms-user-select: none;
     user-select: none;
-    width: 73%;
+    width: 70%;
     display: none;
-    background-color: rgb(235, 238, 238);
     text-align: center;
     border-radius: 6px;
     padding: 10px;
     position: absolute;
     z-index: 1;
-    bottom: 40%;
-    top: 20%;
-    left: 16%;
-    right: 10%;
+    bottom: 60%;
+    top: 10%;
+    left: 13%;
+    right: 20%;
+  
 }
 
 .popup img {
-    width: 50%;
+    width: 70%;
 }
 
 .popup-text{
     margin-top: 3%;
+    font-size: 19px;
+    font-weight: bold;
 }
 
 #input {
     z-index: 1;
     margin-top: 10px;
+    width: 40%;
     border: 1px solid rgb(7, 218, 102);
-    padding: 2px 1px;
+    padding: 4px 2px;
     font-size: 15px;
 }
 
@@ -372,12 +379,35 @@ input::-webkit-inner-spin-button {
 }
 
 #button {
-    padding: 4px 20px;
-    font-size: 14px;
+    padding: 9px 30px;
+    font-size: 18px;
     background-color: rgb(4, 107, 192);
     border: solid 1px rgb(4, 107, 192);
     border-radius: 3px;
     margin-top: 5px;
     cursor: pointer;
     color: #fff;
+    opacity: 0.8;
+}
+
+#card-btn:hover {
+    opacity: 1;
+}
+#button:hover {
+    opacity: 1;
+}
+#ptm-btn:hover {
+    opacity: 1;
+}
+#link-btn:hover {
+    opacity: 1;
+}
+#upi-btn:hover {
+    opacity: 1;
+}
+#cod-btn:hover {
+    opacity: 1;
+}
+#net-btn:hover {
+    opacity: 1;
 }
