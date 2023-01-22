@@ -21,18 +21,42 @@
 <body>
     <h2>My Cart 🛍️</h2>
     <div id="offer">
-        <h3>🤩Availabe Offer :</h3>
+        <h2> <i class="fa-solid fa-tags"></i>Availabe Offer :</h2>
         <ul>
             <li>Upto Rs. 500 Cashback on Paytm Wallet and Postpaid Transactions (Minimum Order Value: Rs. 1000) T&C</li>
+            <span id="dots">...</span><span id="more">
             <li>Get 5% Instant Discount Upto Rs. 500 on SBI Credit Cards (Minimum Order Value: Rs. 2000) T&C</li>
+            <li>Get 2X cashback upto Rs. 500 on CRED Pay UPI(Minimum Order Value: Rs.1000) T&C</li>
+            </span>
+            <button onclick="myFunction()" id="myBtn">View more</button>
         </ul>
     </div>
-    <h2>Total Price : ₹ <span id="heading"></span>.00 </h2>
-    <div id="product-container">
-        
-    </div>
+
+
+    <h2 style="color: green;">Total Price : ₹ <span id="heading"></span>.00 </h2>
+    <div id="product-container"></div>
+    
+    <!-- <button id="address"><a href="address.html">Shipping Address</a></button> -->
+        <!-- <button id="p_order"><a href=""></a> Place order</button> -->
+    
+    <div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <div>
+          <h3>Payment Information</h3>
+          <p>Value of Product(s) <span id="val_p"> </span></p>
+          <p>Discount(-) <span id="Dis"></span> </p>
+          <p id="ship">Shipping (+)</p>
+          <h4 id="sTotal">Sub Total</h4>
+          <h3 id="final">Final Payment</h3>
+          <button id="next" onclick="getPrice()"><a href="address.html" id="nxt">Next</a></button>
+          </div>
+      </div>
+      <button id="order"><span id="orderbtn" style="cursor:pointer" onclick="openNav()">Place order</span></button>
 
 </body>
 
 </html>
 <script src="./cart.js"> </script>
+<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+
+

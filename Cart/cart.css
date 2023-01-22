@@ -4,7 +4,7 @@
   border: 1px solid lightgrey;
   border-radius: 8px;
   color: white;
-  font-size: 20px;
+  font-size: 16px;
   /* margin-top: 20px; */
   padding: 10px;
   background: #cc2b5e;  /* fallback for old browsers */
@@ -12,7 +12,15 @@ background: -webkit-linear-gradient(to right, #753a88, #cc2b5e);  /* Chrome 10-2
 background: linear-gradient(to right, #753a88, #cc2b5e); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 
 }
-h2 {
+#myBtn{
+  background-color: black;
+  padding: 5px;
+  font-size: 12px;
+  border-radius: 5px;
+  margin-top: 10px;
+}
+
+h3,h2 {
   border: 1px solid lightgray;
   text-align: center;
   width: 80%;
@@ -196,4 +204,81 @@ h2 {
     gap: 50px;
     text-align: center;
   }
+}
+
+/* new form */
+body {
+  font-family: "Lato", sans-serif;
+}
+
+.sidenav {
+  height: 100%;
+  color: white;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  right: 0;
+  background-color: black;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px ;
+  padding-left: 20px;
+  
+}
+
+.sidenav a {
+  padding: 5px 8px 5px 8px;
+  text-decoration: none;
+  font-size: 20px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidenav a:hover {
+  color: black;
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+#next{
+
+  display: block;
+  margin: auto;
+}
+#nxt{
+  text-decoration: none;
+}
+#order{
+  align-items: center;
+  background-color: green;
+  border: 2px solid green;
+  box-sizing: border-box;
+  color: #fff;
+  cursor: pointer;
+  display: inline-flex;
+  fill: #000;
+  font-size: 15px;
+  font-weight: 500;
+  height: 35px;
+  justify-content: center;
+  line-height: 24px;
+  min-width: 100px;
+  transition: all 0.3s;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  border-radius: 5px;
+  
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
 }
