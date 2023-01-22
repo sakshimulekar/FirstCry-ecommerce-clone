@@ -211,13 +211,13 @@ function bankData(){
       data: document.getElementById('net-input').value
    }
    lsData.push(netobj)
-  // proccessData()
+   proccessData()
    localStorage.setItem('paymentdata', JSON.stringify(lsData))
 }
 
 
 // COD DATA //
-document.getElementById('').addEventListener('click', function() {
+document.getElementById('cod-btn').addEventListener('click', function() {
    proccessData()
 })
 
