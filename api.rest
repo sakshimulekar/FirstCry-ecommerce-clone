@@ -1,17 +1,31 @@
 
 ###
-GET https://test-api2-73ku.onrender.com/data
+GET https://rahul-api.onrender.com/data
 
 ###
 
 ###
-PATCH  https://test-api2-73ku.onrender.com/Footwear/40
+DELETE  https://rahul-api.onrender.com/data/a7bT6z8
+
+# Content-Type: application/json
+# {
+#    "image": "https://cdn.fcglcdn.com/brainbees/images/products/300x364/11882234a.webp",
+#     "title": "Pine Kids Lace Up Party Wear Shoes- Black",
+#     "d-price": 800,
+#     "original pricer2": 1100,
+#     "age": "8 - 9Y"
+# } 
+
+
+###
+POST https://rahul-api.onrender.com/data/
 
 Content-Type: application/json
 {
+    "id":"37"
    "image": "https://cdn.fcglcdn.com/brainbees/images/products/300x364/11882234a.webp",
-    "title": "Pine Kids Lace Up Party Wear Shoes- Black",
+    "title": "Pine Kids for party",
     "d-price": 800,
     "original pricer2": 1100,
-    "age": "8 - 9Y"
-}  
+    "age": "5 - 7Y"
+}
