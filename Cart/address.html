@@ -6,53 +6,156 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Shipping form</title>
 </head>
+<style>
+h2{
+  text-align: center;
+}
+form {
+  border: 1px solid lightgray;
+  width: 25%;
+  padding: 15px;
+  margin: auto;
+  justify-content: center;
+  border-radius: 5px;
+  font-size: 16px;
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  padding-left: 120px;
+}
+label {
+  display: flex;
+  flex-direction: column;
+}
+input {
+  width: 70%;
+  padding: 5px;
+  border: 1px solid lightgray;
+  /* text-align: center; */
+  border-radius: 5px;
+}
+#save {
+  background-color: green;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  height: 40px;
+  margin: 5px;
+}
+#order{
+  background-color: darkblue;
+  color: white;
+  border: none;
+  height: 40px;
+  border-radius: 5px;
+  margin: 5px;
+  width: 98%;
+}
+#order > a{
+  text-decoration: none;
+  color: white;
+}
+#cancel {
+  background-color: red;
+  color: white;
+  border: none;
+  height: 40px;
+  border-radius: 5px;
+  margin: 5px;
+}
+#form-heading{
+  text-align: center;
+}
+@media only screen and (min-width: 600px) {
+  form{
+    width: 40%;
+  }
+  
+}
+/* Extra small devices (phones, 600px and down) */ 
+@media only screen and (max-width: 600px) {
+ 
+  form{
+    width: 80%;
+  }
+}
+</style>
 <body>
     <h2>
         Change/Save Address
     </h2>
-    <form action="">
+    <form action="" id="form">
         <div> Full Name :
-            <input type="text" name="" id="name" placeholder="Full Name">
+            <input type="text" name="" id="name" placeholder="Full Name" required>
         </div><br>
 
         <div> Mobile No. :
-            <input type="number" name="" id="mob_no" placeholder="enter Mobile no.">
+            <input type="text" name="" id="mob_no" placeholder="enter Mobile no." required>
         </div><br>
         
        <div> Alternate Mobile No. :
-            <input type="number" name="" id="mob_no2" placeholder="enter alternate Mobile no.">
+            <input type="text" name="" id="mob_no2" placeholder="enter alternate Mobile no.">
        </div><br>
 
        <div>Pincode : 
-            <input type="number" id="pin" placeholder="Pincode">
+            <input type="text" id="pin" placeholder="Pincode" required>
        </div><br>
 
        <div>City :
-            <input type="text" name="" id="city" placeholder="city">
+            <input type="text" name="" id="city" placeholder="city" required>
        </div><br>
 
        <div>State :
-            <input type="text" name="" id="state" placeholder="state">
+            <input type="text" name="" id="state" placeholder="state" required>
        </div><br>
 
        <div>flat/House No./Building :
-            <input type="text" name="" id="flat" placeholder="flat/House No./Building">
+            <input type="text" name="" id="flat" placeholder="flat/House No./Building" required>
        </div><br>
 
        <div>Area/Locality:
-            <input type="text" id="area" placeholder="area/Locality">
+            <input type="text" id="area" placeholder="area/Locality" required>
        </div><br>
 
        <div>Landmark :
-            <input type="text" name="" id="landmark" placeholder="Landmark">
+            <input type="text" name="" id="landmark" placeholder="Landmark" required>
        </div><br>
 
-       <button id="cancel">Cancel</button>
-       <button id="save">Save Address</button>
+       <button id="cancel" onclick="myFunction()" value="reset form">Cancel</button>
+
+       <button id="save"> Save Address</button>
+
+       <div>
+          <button id="order"><a href="../payment.html">Proceed to Buy</a></button>
+       </div>
+       
         
     </form>
 </body>
 <script>
-    
+    let userform = document.getElementById("form");
+
+    data = JSON.parse(localStorage.getItem("form_submit"))||[];
+    userform.addEventListener("submit",(e)=>{
+          e.preventDefault();
+          let obj = {
+               name : userform.name.value,
+               mob_no : userform.mob_no.value,
+               mob_no2 : userform.mob_no2.value,
+               pin : userform.pin.value,
+               city : userform.city.value,
+               state : userform.state.value,
+               flat : userform.flat.value,
+               area : userform.area.value, 
+               landmark : userform.landmark.value,    
+          }
+          console.log(obj);
+          data.push(obj);
+          localStorage.setItem("form_submit",JSON.stringify(data));
+    })
+
+     function myFunction(){
+     document.getElementById("form").reset();
+    }    
 </script>
 </html>
