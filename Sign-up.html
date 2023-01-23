@@ -9,6 +9,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sign-Up</title>
     <link rel="stylesheet" href="/Styles/Sign-up.css">
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 </head>
 
 <body>
@@ -66,24 +67,29 @@
             }
         });
         console.log(formObj.fname);
-        if (formObj.fname == "" || formObj.lname == "" || formObj.email == "" || formObj.password == "") 
-        {
+        if (formObj.fname == "" || formObj.lname == "" || formObj.email == "" || formObj.password == "") {
             alert("Please Fill all the columns")
         }
         else {
 
             if (isPresent === true) {
                 header.innerText = "Account is already Present"
-                setTimeout(()=>{
+                setTimeout(() => {
                     header.style.color = "#660000"
                     window.location.href = "Sign-up.html"
-                },1700)
+                }, 1700)
             } else {
                 arrData.push(formObj);
                 localStorage.setItem("details", JSON.stringify(arrData));
-                header.innerText = "You Have Successfully Signed-Up";
-                header.style.color = "#0c0936"
+                // header.innerText = "You Have Successfully Signed-Up";
+                // header.style.color = "#0c0936"
                 // alert("Redirecting To Home Page");
+                Swal.fire(
+                    `success`,
+                    'Sign-in Successful',
+                    // 'You clicked the button!',
+                    'success'
+                )
                 setTimeout(() => {
                     window.location.href = "sign-in.html"
                 }, 2000)
