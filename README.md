@@ -1,4 +1,4 @@
-# FirstCry_clone
+# FirstCry-ecommerce-clone
 This is our Git repo of our construct Week Presentation that was given by Masai School.
 We Have built a website called Firstcry.com, it is a clone website of Firstcry.com, as it was a collaborative project we are 5 member team.
 
